@@ -7,11 +7,21 @@ require './lib/kickers'
 set(:css_dir) { File.join(views, 'css') }
 
 get '/' do
-  @players = Calculate.players(:offense, params) + Calculate.players(:defense, params) + Calculate.players(:kickers, params)
+  @players = Calculate.all(params)
   erb :index
 end
 
-post '/draft' do
-  Offense.draft params[:player_id] 
+get '/reset' do
+  Calculate.reset
+  redirect to('/')
+end
+
+get '/:table' do
+  @players = Calculate.players(params[:table], params)
+  erb :index
+end
+
+post '/:table/draft' do
+  Calculate.draft params[:table].to_sym, params[:player_id] 
   redirect to('/')
 end

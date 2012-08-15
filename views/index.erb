@@ -29,7 +29,7 @@
           <td><%= sprintf("%0.3f", player[:value]) %></td>
           <td>
             <% unless player[:drafted] %>
-              <form class= "draft" action="draft" method="post">
+              <form class= "draft" action=<%= "#{player[:table]}/draft" %> method="post">
                 <input type="hidden" name="player_id" value=<%= player[:id] %> />
                 <input type="submit" value="draft" />
               </form>
@@ -42,7 +42,7 @@
   <div id='query'>
     <a href="/">All</a>
     <a href="/offense">Offense</a>
-    <a href="/defense">Defense</a><br />
+    <a href="/defense">Defense</a>
     <a href="/kickers">Kickers</a><br />
     <form action="/" method="get">
       Position: <input type="text" name="position" /><br />
