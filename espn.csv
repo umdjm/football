@@ -1,0 +1,501 @@
+RNK,"PLAYER, TEAM POS",    C/A,  YDS,   TD,  INT, RUSH,  YDS,   TD,  REC,  YDS,   TD,PTS
+1,"Arian Foster, Hou RB",0/0,0,0,0,310,1459,12,63,730,2,296
+2,"Ray Rice, Bal RB",0/0,0,0,0,282,1317,11,74,679,3,278
+3,"LeSean McCoy, Phi RB",0/0,0,0,0,269,1294,12,38,285,3,245
+4,"Aaron Rodgers, GB QB",348/501,4512,43,7,50,216,4,0,0,0,381
+5,"Maurice Jones-Drew, Jac RB",0/0,0,0,0,298,1371,9,33,300,2,229
+6,"Tom Brady, NE QB",383/590,4924,40,13,32,167,2,0,0,0,354
+7,"Calvin Johnson, Det WR",0/0,0,0,0,3,32,0,92,1511,12,224
+8,"Drew Brees, NO QB",430/614,4921,41,14,20,50,2,0,0,0,345
+9,"Chris Johnson, Ten RB",0/0,0,0,0,300,1274,7,59,428,1,215
+10,"Larry Fitzgerald, Ari WR",0/0,0,0,0,0,0,0,84,1309,9,184
+11,"Andre Johnson, Hou WR  P",0/0,0,0,0,2,14,0,81,1234,8,172
+12,"Matthew Stafford, Det QB",395/626,5012,41,17,20,60,1,0,0,0,338
+13,"Rob Gronkowski, NE TE  P",0/0,0,0,0,0,0,0,80,1191,12,191
+14,"Roddy White, Atl WR",0/0,0,0,0,0,0,0,101,1194,9,173
+15,"Greg Jennings, GB WR  Q",0/0,0,0,0,0,0,0,73,1125,9,166
+16,"Marshawn Lynch, Sea RB",0/0,0,0,0,266,1073,11,25,187,1,193
+17,"Matt Forte, Chi RB  P",0/0,0,0,0,257,1161,5,50,512,1,199
+18,"DeMarco Murray, Dal RB",0/0,0,0,0,203,1053,7,33,322,1,183
+19,"Mike Wallace, Pit WR",0/0,0,0,0,5,54,0,72,1180,8,169
+20,"Wes Welker, NE WR",0/0,0,0,0,2,3,0,118,1343,7,176
+21,"Jamaal Charles, KC RB  P",0/0,0,0,0,241,1215,3,40,390,2,186
+22,"Jimmy Graham, NO TE",0/0,0,0,0,0,0,0,87,1265,10,186
+23,"Cam Newton, Car QB",302/506,3986,22,18,120,742,8,0,0,0,325
+24,"Adrian Peterson, Min RB  P",0/0,0,0,0,248,1124,8,22,197,0,177
+25,"Hakeem Nicks, NYG WR  P",0/0,0,0,0,0,0,0,73,1125,8,160
+26,"A.J. Green, Cin WR",0/0,0,0,0,4,51,0,76,1223,7,169
+27,"Eli Manning, NYG QB",379/600,4782,30,16,31,24,1,0,0,0,279
+28,"Darren McFadden, Oak RB",0/0,0,0,0,206,988,7,44,339,1,175
+29,"Victor Cruz, NYG WR",0/0,0,0,0,0,0,0,72,1107,7,150
+30,"Ryan Mathews*, SD RB  O",0/0,0,0,0,220,1079,7,47,441,1,195
+31,"Steven Jackson, StL RB",0/0,0,0,0,284,1176,6,38,313,0,182
+32,"Michael Vick, Phi QB  P",236/392,3097,19,10,79,627,6,0,0,0,271
+33,"Julio Jones, Atl WR",0/0,0,0,0,7,68,0,74,1158,6,155
+34,"Fred Jackson, Buf RB",0/0,0,0,0,238,1099,7,40,382,0,185
+35,"Brandon Marshall, Chi WR",0/0,0,0,0,2,20,0,80,1129,6,148
+36,"Trent Richardson, Cle RB  Q",0/0,0,0,0,286,1258,7,29,232,1,190
+37,"Michael Turner, Atl RB",0/0,0,0,0,273,1145,9,10,122,1,182
+38,"Frank Gore, SF RB",0/0,0,0,0,254,1118,7,28,224,1,177
+39,"Jordy Nelson, GB WR",0/0,0,0,0,0,0,0,74,1131,6,149
+40,"Steve Smith, Car WR",0/0,0,0,0,4,36,0,68,1055,7,148
+41,"Dez Bryant, Dal WR  P",0/0,0,0,0,0,0,0,64,948,9,146
+42,"Darren Sproles, NO RB  P",0/0,0,0,0,82,475,1,80,751,6,164
+43,"Ahmad Bradshaw, NYG RB",0/0,0,0,0,224,934,8,37,260,1,167
+44,"Willis McGahee, Den RB",0/0,0,0,0,203,848,9,12,57,0,139
+45,"Tony Romo, Dal QB",330/515,4092,29,11,19,62,1,0,0,0,265
+46,"Marques Colston, NO WR",0/0,0,0,0,0,0,0,76,1073,7,147
+47,"Brandon Lloyd, NE WR  P",0/0,0,0,0,0,0,0,62,944,7,136
+48,"Miles Austin, Dal WR  Q",0/0,0,0,0,2,12,0,63,920,8,141
+49,"Peyton Manning, Den QB",371/569,4516,30,17,18,13,0,0,0,0,263
+50,"Roy Helu, Wsh RB  Q",0/0,0,0,0,175,793,4,44,350,2,146
+51,"Reggie Bush, Mia RB",0/0,0,0,0,187,894,5,41,291,1,150
+52,"BenJarvus Green-Ellis, Cin RB  Q",0/0,0,0,0,217,805,9,7,44,0,138
+53,"Vincent Jackson, TB WR",0/0,0,0,0,3,45,0,65,1054,7,149
+54,"Jonathan Stewart, Car RB",0/0,0,0,0,158,772,4,44,412,1,144
+55,"Percy Harvin, Min WR",0/0,0,0,0,37,263,1,76,900,5,150
+56,"Antonio Gates, SD TE",0/0,0,0,0,0,0,0,73,948,8,142
+57,"Dwayne Bowe, KC WR",0/0,0,0,0,0,0,0,73,1045,8,152
+58,"Stevan Ridley, NE RB",0/0,0,0,0,230,980,10,12,77,0,161
+59,"Jeremy Maclin, Phi WR  P",0/0,0,0,0,3,14,0,68,934,8,142
+60,"Steve Johnson, Buf WR",0/0,0,0,0,0,0,0,82,984,6,134
+61,"Vernon Davis, SF TE",0/0,0,0,0,0,0,0,70,900,8,138
+62,"Shonn Greene, NYJ RB",0/0,0,0,0,237,1002,4,32,206,0,142
+63,"Demaryius Thomas, Den WR  P",0/0,0,0,0,0,0,0,63,1023,6,138
+64,"Philip Rivers, SD QB",357/557,4605,26,15,26,32,1,0,0,0,263
+65,"Beanie Wells, Ari RB  Q",0/0,0,0,0,228,976,7,9,80,0,143
+66,"Antonio Brown, Pit WR",0/0,0,0,0,3,9,0,80,1045,4,128
+67,"Ben Tate, Hou RB",0/0,0,0,0,149,801,6,15,103,1,126
+68,"Eric Decker, Den WR",0/0,0,0,0,0,0,0,80,1056,5,135
+69,"Jason Witten, Dal TE",0/0,0,0,0,0,0,0,77,962,6,132
+70,"DeAngelo Williams, Car RB",0/0,0,0,0,177,858,3,22,175,1,124
+71,"DeSean Jackson, Phi WR  P",0/0,0,0,0,10,73,0,55,987,6,141
+72,"Jahvid Best*, Det RB  O",0/0,0,0,0,149,700,2,48,481,1,134
+73,"Matt Ryan, Atl QB",339/550,3803,28,14,38,84,1,0,0,0,246
+74,"Robert Meachem, SD WR",0/0,0,0,0,6,14,0,67,967,6,133
+75,"Isaac Redman, Pit RB",0/0,0,0,0,194,834,5,15,101,1,123
+76,"Michael Bush, Chi RB",0/0,0,0,0,164,690,7,21,200,0,129
+77,"Pierre Garcon, Wsh WR",0/0,0,0,0,3,8,0,66,890,6,123
+78,"Mark Ingram, NO RB  P",0/0,0,0,0,183,765,7,8,41,0,120
+79,"Ben Roethlisberger, Pit QB  P",305/481,3876,25,14,36,100,1,0,0,0,235
+80,"Torrey Smith, Bal WR  P",0/0,0,0,0,4,31,0,55,969,4,123
+81,"C.J. Spiller, Buf RB",0/0,0,0,0,123,645,4,41,372,1,127
+82,"Denarius Moore, Oak WR  P",0/0,0,0,0,4,27,0,50,856,6,123
+83,"Doug Martin, TB RB",0/0,0,0,0,196,841,4,37,376,0,141
+84,"Malcom Floyd, SD WR",0/0,0,0,0,0,0,0,49,890,5,119
+85,"Santonio Holmes, NYJ WR  Q",0/0,0,0,0,3,25,0,56,753,7,117
+86,"Matt Schaub, Hou QB",258/408,3319,22,8,18,19,2,0,0,0,215
+87,"Jermichael Finley, GB TE  Q",0/0,0,0,0,0,0,0,59,833,6,119
+88,"Peyton Hillis, KC RB",0/0,0,0,0,198,789,6,27,179,0,127
+89,"Lance Moore, NO WR",0/0,0,0,0,0,0,0,63,747,7,116
+90,"Toby Gerhart, Min RB",0/0,0,0,0,135,656,4,24,190,2,118
+91,"Anquan Boldin, Bal WR",0/0,0,0,0,0,0,0,60,841,5,114
+92,"Aaron Hernandez, NE TE  P",0/0,0,0,0,0,0,0,67,793,7,121
+93,"Michael Crabtree, SF WR",0/0,0,0,0,0,0,0,59,786,5,108
+94,"Donald Brown, Ind RB",0/0,0,0,0,212,874,4,14,134,0,124
+95,"Kenny Britt*, Ten WR  O",0/0,0,0,0,0,0,0,48,850,5,113
+96,"David Wilson, NYG RB",0/0,0,0,0,149,725,4,15,147,1,110
+97,"Nate Washington, Ten WR",0/0,0,0,0,2,5,0,58,802,5,110
+98,"Jay Cutler, Chi QB",255/436,3209,20,11,26,116,1,0,0,0,197
+99,"Robert Griffin III, Wsh QB",267/463,3132,18,18,97,436,6,0,0,0,230
+100,"Shane Vereen, NE RB",0/0,0,0,0,120,518,3,35,230,1,96
+101,"Cedric Benson, GB RB",0/0,0,0,0,182,673,4,5,42,0,91
+102,"Felix Jones, Dal RB",0/0,0,0,0,138,658,1,31,286,1,101
+103,"Sidney Rice, Sea WR  Q",0/0,0,0,0,0,0,0,48,702,5,100
+104,"Josh Freeman, TB QB",298/499,3338,20,14,57,292,2,0,0,0,218
+105,"Tony Gonzalez, Atl TE",0/0,0,0,0,0,0,0,78,819,6,117
+106,"Reggie Wayne, Ind WR",0/0,0,0,0,0,0,0,62,711,5,101
+107,"Alex Smith, SF QB",297/496,3415,16,8,32,102,3,0,0,0,206
+108,"Fred Davis, Wsh TE",0/0,0,0,0,0,0,0,61,807,5,110
+109,49ers D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,151
+110,"Andy Dalton, Cin QB",290/490,3427,22,15,29,131,0,0,0,0,202
+111,"Daniel Thomas, Mia RB",0/0,0,0,0,179,728,4,11,79,0,101
+112,"Darrius Heyward-Bey, Oak WR",0/0,0,0,0,0,0,0,50,784,4,102
+113,"James Starks, GB RB  Q",0/0,0,0,0,112,504,3,29,193,1,89
+114,"Titus Young, Det WR",0/0,0,0,0,5,32,0,65,744,5,107
+115,Texans D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,157
+116,"Brandon Pettigrew, Det TE",0/0,0,0,0,0,0,0,70,700,5,100
+117,"Bernard Scott*, Cin RB  O",0/0,0,0,0,172,700,2,16,112,2,103
+118,"Mario Manningham, SF WR",0/0,0,0,0,0,0,0,38,530,5,83
+119,"Justin Blackmon, Jac WR",0/0,0,0,0,0,0,0,47,665,6,102
+120,"Pierre Thomas, NO RB",0/0,0,0,0,114,529,2,48,370,2,111
+121,"Rueben Randle, NYG WR",0/0,0,0,0,0,0,0,44,669,5,96
+122,"LeGarrette Blount, TB RB",0/0,0,0,0,122,545,6,14,76,0,93
+123,"Joe Flacco, Bal QB",311/522,3621,21,13,27,108,1,0,0,0,208
+124,"Jared Cook, Ten TE",0/0,0,0,0,0,0,0,66,693,6,105
+125,Bears D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,154
+126,"Laurent Robinson, Jac WR",0/0,0,0,0,0,0,0,40,543,6,90
+127,"Carson Palmer, Oak QB",264/445,3352,20,17,24,41,0,0,0,0,182
+128,"Mike Tolbert, Car RB",0/0,0,0,0,58,278,4,36,301,2,89
+129,"Mike Williams, TB WR",0/0,0,0,0,0,0,0,50,615,5,89
+130,Ravens D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,162
+131,"Sam Bradford, StL QB  P",265/461,3153,16,14,24,58,0,0,0,0,161
+132,"Nate Burleson, Det WR",0/0,0,0,0,9,74,0,55,655,4,94
+133,"Jacob Tamme, Den TE",0/0,0,0,0,0,0,0,63,779,5,107
+134,"Randy Moss, SF WR",0/0,0,0,0,0,0,0,32,434,5,73
+135,"Owen Daniels, Hou TE",0/0,0,0,0,0,0,0,53,650,5,95
+136,"Leonard Hankerson, Wsh WR",0/0,0,0,0,0,0,0,55,672,4,91
+137,"Matt Flynn, Sea QB",238/410,2628,16,12,24,44,2,0,0,0,157
+138,"Ryan Fitzpatrick, Buf QB",307/510,3357,21,20,33,128,0,0,0,0,182
+139,"Andrew Luck, Ind QB",299/534,3408,15,18,29,62,2,0,0,0,170
+140,"Jon Baldwin, KC WR",0/0,0,0,0,0,0,0,52,666,2,78
+141,"Brent Celek, Phi TE  P",0/0,0,0,0,0,0,0,59,694,5,99
+142,"Kevin Smith, Det RB  P",0/0,0,0,0,129,554,3,22,211,1,98
+143,Eagles D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,129
+144,"Mike Goodson, Oak RB  Q",0/0,0,0,0,142,590,2,37,290,0,96
+145,"Greg Little, Cle WR",0/0,0,0,0,3,15,0,60,727,2,83
+146,"Jonathan Dwyer, Pit RB  Q",0/0,0,0,0,107,501,3,10,66,0,72
+147,Seahawks D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,149
+148,Steelers D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,145
+149,Jets D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,123
+150,"Stephen Gostkowski, NE K",0/0,0,0,0,0,0,0,0,0,0,143
+151,Falcons D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,118
+152,"Mason Crosby, GB K",0/0,0,0,0,0,0,0,0,0,0,142
+153,"David Akers, SF K",0/0,0,0,0,0,0,0,0,0,0,139
+154,Lions D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,123
+155,"Sebastian Janikowski, Oak K",0/0,0,0,0,0,0,0,0,0,0,138
+156,"Garrett Hartley, NO K",0/0,0,0,0,0,0,0,0,0,0,136
+157,"Dan Bailey, Dal K",0/0,0,0,0,0,0,0,0,0,0,135
+158,"Alex Henery, Phi K",0/0,0,0,0,0,0,0,0,0,0,132
+159,"Matt Prater, Den K",0/0,0,0,0,0,0,0,0,0,0,132
+160,"Rob Bironas, Ten K",0/0,0,0,0,0,0,0,0,0,0,130
+161,"Robbie Gould, Chi K",0/0,0,0,0,0,0,0,0,0,0,128
+162,"Dustin Keller, NYJ TE",0/0,0,0,0,0,0,0,57,701,4,94
+163,"Brandon Jacobs, SF RB",0/0,0,0,0,76,289,4,12,71,0,57
+164,"Brian Quick, StL WR",0/0,0,0,0,0,0,0,57,689,4,92
+165,"Ryan Williams, Ari RB  P",0/0,0,0,0,77,324,2,18,150,1,65
+166,"Brandon LaFell, Car WR",0/0,0,0,0,0,0,0,53,721,3,90
+167,"Kellen Winslow, Sea TE",0/0,0,0,0,0,0,0,70,687,4,92
+168,"Tim Hightower, Wsh RB  Q",0/0,0,0,0,69,272,4,28,216,0,66
+169,"Ronnie Brown, SD RB",0/0,0,0,0,75,255,3,10,51,0,46
+170,"Delone Carter, Ind RB  Q",0/0,0,0,0,118,460,3,5,34,0,63
+171,"Evan Royster, Wsh RB",0/0,0,0,0,91,423,1,15,149,0,60
+172,"Michael Floyd, Ari WR",0/0,0,0,0,0,0,0,45,705,2,82
+173,"Matt Cassel, KC QB",227/390,2542,15,10,24,86,0,0,0,0,147
+174,"Kendall Wright, Ten WR",0/0,0,0,0,6,65,0,49,715,4,99
+175,"James Jones, GB WR",0/0,0,0,0,0,0,0,37,544,4,78
+176,"Ryan Grant, FA RB",0/0,0,0,0,119,482,2,6,48,0,62
+177,"Dion Lewis, Phi RB",0/0,0,0,0,65,279,2,11,88,1,53
+178,Bills D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,121
+179,"Rashard Mendenhall*, Pit RB  O",0/0,0,0,0,97,380,4,7,43,0,62
+180,Packers D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,128
+181,"Martellus Bennett, NYG TE",0/0,0,0,0,0,0,0,39,572,4,81
+182,"Bernard Pierce, Bal RB  P",0/0,0,0,0,87,356,3,6,31,0,54
+183,"Isaiah Pead, StL RB",0/0,0,0,0,93,370,1,19,152,0,56
+184,"Kendall Hunter, SF RB",0/0,0,0,0,69,304,1,20,210,0,57
+185,"Plaxico Burress, FA WR",0/0,0,0,0,0,0,0,38,502,6,86
+186,"Andre Caldwell, Den WR",0/0,0,0,0,0,0,0,50,504,3,68
+187,"Jermaine Gresham, Cin TE",0/0,0,0,0,0,0,0,50,530,5,83
+188,"Taiwan Jones, Oak RB  Q",0/0,0,0,0,67,344,2,7,67,0,52
+189,"Matt Bryant, Atl K",0/0,0,0,0,0,0,0,0,0,0,124
+190,"Neil Rackers, Wsh K",0/0,0,0,0,0,0,0,0,0,0,123
+191,"Eddie Royal, SD WR  Q",0/0,0,0,0,7,50,0,33,432,2,60
+192,"Jason Snelling, Atl RB  Q",0/0,0,0,0,47,177,3,28,172,1,58
+193,"Randall Cobb, GB WR",0/0,0,0,0,6,37,0,34,455,2,60
+194,"Jacoby Ford, Oak WR",0/0,0,0,0,5,55,0,35,561,1,65
+195,"Coby Fleener, Ind TE",0/0,0,0,0,0,0,0,47,514,5,81
+196,"Vincent Brown, SD WR",0/0,0,0,0,0,0,0,33,565,2,68
+197,"Lamar Miller, Mia RB",0/0,0,0,0,64,306,1,16,137,1,53
+198,"Greg Olsen, Car TE",0/0,0,0,0,0,0,0,48,526,5,82
+199,"Tim Tebow, NYJ QB",130/262,1742,12,10,103,557,6,0,0,0,178
+200,"Alshon Jeffery, Chi WR",0/0,0,0,0,0,0,0,38,520,3,70
+201,"Terrell Owens, Sea WR",0/0,0,0,0,0,0,0,32,391,3,55
+202,"Braylon Edwards, Sea WR",0/0,0,0,0,0,0,0,28,390,3,57
+203,"Stephen Hill, NYJ WR",0/0,0,0,0,0,0,0,25,342,3,52
+204,"Jacquizz Rodgers, Atl RB",0/0,0,0,0,81,354,1,26,243,0,61
+205,"Doug Baldwin, Sea WR  Q",0/0,0,0,0,0,0,0,42,561,2,68
+206,"Robert Turbin, Sea RB",0/0,0,0,0,104,415,2,6,43,0,53
+207,"Kevin Kolb, Ari QB  P",180/304,2200,15,11,14,51,1,0,0,0,131
+208,"Kyle Rudolph, Min TE",0/0,0,0,0,0,0,0,40,575,3,75
+209,"Rashad Jennings, Jac RB",0/0,0,0,0,73,337,1,23,159,0,54
+210,"Jerome Simpson, Min WR  SSPD",0/0,0,0,0,0,0,0,38,589,2,70
+211,"Steve Breaston, KC WR",0/0,0,0,0,2,25,0,55,678,2,81
+212,"LaMichael James, SF RB",0/0,0,0,0,38,194,0,37,306,2,59
+213,"Joe McKnight, NYJ RB",0/0,0,0,0,56,232,1,14,131,1,46
+214,"Danny Woodhead, NE RB",0/0,0,0,0,66,314,1,20,180,0,55
+215,"Montario Hardesty, Cle RB",0/0,0,0,0,49,181,1,12,93,0,33
+216,Cowboys D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,110
+217,"Dexter McCluster, KC RB",0/0,0,0,0,33,149,0,35,315,1,47
+218,"Ed Dickson, Bal TE  Q",0/0,0,0,0,0,0,0,51,536,4,77
+219,"Marcedes Lewis, Jac TE",0/0,0,0,0,0,0,0,38,397,4,63
+220,"Alex Green, GB RB  P",0/0,0,0,0,46,176,0,16,160,2,43
+221,"Jabar Gaffney, NE WR",0/0,0,0,0,0,0,0,34,425,4,64
+222,"Mark Sanchez, NYJ QB",195/351,2184,17,17,36,80,2,0,0,0,131
+223,"Joel Dreessen, Den TE",0/0,0,0,0,0,0,0,30,350,5,65
+224,"Davone Bess, Mia WR",0/0,0,0,0,2,7,0,70,721,3,86
+225,"Mohamed Sanu, Cin WR",0/0,0,0,0,0,0,0,44,476,3,65
+226,"Knowshon Moreno, Den RB  Q",0/0,0,0,0,55,229,0,22,217,1,45
+227,"Josh Morgan, Wsh WR",0/0,0,0,0,0,0,0,42,470,2,59
+228,"Mikel Leshoure, Det RB  SSPD",0/0,0,0,0,44,165,3,7,64,0,40
+229,"Le'Ron McClain, SD RB",0/0,0,0,0,56,250,2,25,198,0,56
+230,"Chad Johnson, Mia WR",0/0,0,0,0,0,0,0,0,0,0,0
+231,"Damian Williams, Ten WR",0/0,0,0,0,0,0,0,29,390,3,57
+232,"Bryce Brown, Phi RB",0/0,0,0,0,27,101,2,2,17,0,23
+233,"Devery Henderson, NO WR  P",0/0,0,0,0,1,14,0,33,455,2,58
+234,"Santana Moss, Wsh WR",0/0,0,0,0,0,0,0,34,447,2,56
+235,"David Nelson, Buf WR  P",0/0,0,0,0,0,0,0,51,490,3,67
+236,"Danny Amendola, StL WR",0/0,0,0,0,0,0,0,77,636,1,69
+237,"Austin Collie, Ind WR",0/0,0,0,0,0,0,0,55,574,3,75
+238,"Kevin Walter, Hou WR",0/0,0,0,0,0,0,0,44,532,3,71
+239,"Kahlil Bell, Chi RB",0/0,0,0,0,30,141,0,22,204,0,32
+240,"Ronnie Hillman, Den RB  P",0/0,0,0,0,32,134,0,30,287,1,45
+241,"Brian Hartline*, Mia WR  O",0/0,0,0,0,2,21,0,43,610,1,69
+242,"Leon Washington, Sea RB",0/0,0,0,0,61,285,1,27,202,0,52
+243,"Bilal Powell, NYJ RB",0/0,0,0,0,17,66,1,10,65,0,18
+244,"Scott Chandler, Buf TE",0/0,0,0,0,0,0,0,31,315,5,61
+245,"Vick Ballard, Ind RB",0/0,0,0,0,34,130,2,4,30,0,26
+246,"Javon Ringer, Ten RB",0/0,0,0,0,0,0,0,0,0,0,0
+247,"D.J. Ware, NYG RB",0/0,0,0,0,0,0,0,0,0,0,0
+248,"Emmanuel Sanders, Pit WR  P",0/0,0,0,0,0,0,0,26,355,2,47
+249,"Heath Miller, Pit TE  P",0/0,0,0,0,0,0,0,52,546,1,60
+250,"Chris Ivory, NO RB",0/0,0,0,0,0,0,0,0,0,0,0
+251,"Jerrel Jernigan, NYG WR",0/0,0,0,0,0,0,0,29,312,2,43
+252,"John Kuhn, GB RB  Q",0/0,0,0,0,0,0,0,0,0,0,0
+253,"Baron Batch, Pit RB",0/0,0,0,0,0,0,0,0,0,0,0
+254,"Christian Ponder, Min QB",207/370,2359,17,15,32,251,0,0,0,0,149
+255,"Matt Moore, Mia QB",156/267,1825,15,10,24,67,1,0,0,0,117
+256,"Chris Ogbonnaya, Cle RB",0/0,0,0,0,0,0,0,0,0,0,0
+257,"Brandon Jackson, Cle RB",0/0,0,0,0,0,0,0,0,0,0,0
+258,"Jake Locker, Ten QB",124/218,1773,10,10,21,91,2,0,0,0,107
+259,"Andre Roberts, Ari WR",0/0,0,0,0,0,0,0,42,497,1,55
+260,"Marcel Reece, Oak RB",0/0,0,0,0,0,0,0,0,0,0,0
+261,"Lance Ball, Den RB",0/0,0,0,0,0,0,0,0,0,0,0
+262,"Donald Jones, Buf WR",0/0,0,0,0,3,14,0,33,333,2,46
+263,"Brandon Weeden, Cle QB",248/435,2557,16,12,20,27,0,0,0,0,136
+264,"Chris Givens, StL WR",0/0,0,0,0,0,0,0,36,489,1,54
+265,"Mike Nugent, Cin K",0/0,0,0,0,0,0,0,0,0,0,123
+266,"Tashard Choice, Buf RB",0/0,0,0,0,0,0,0,0,0,0,0
+267,"Jordan Shipley, Cin WR",0/0,0,0,0,0,0,0,27,281,1,34
+268,"Mike Thomas, Jac WR",0/0,0,0,0,7,41,0,37,362,2,52
+269,"Jason Hanson, Det K",0/0,0,0,0,0,0,0,0,0,0,123
+270,"Dennis Pitta, Bal TE  Q",0/0,0,0,0,0,0,0,26,289,3,46
+271,"Justin Forsett, Hou RB",0/0,0,0,0,0,0,0,0,0,0,0
+272,"Evan Moore, Cle TE",0/0,0,0,0,0,0,0,33,321,3,50
+273,"Jacoby Jones, Bal WR",0/0,0,0,0,4,19,0,26,397,2,52
+274,"Earl Bennett, Chi WR  Q",0/0,0,0,0,0,0,0,24,324,2,42
+275,"Anthony Fasano, Mia TE",0/0,0,0,0,0,0,0,31,358,3,53
+276,"Tony Moeaki, KC TE  P",0/0,0,0,0,0,0,0,38,397,2,51
+277,"LaRod Stephens-Howling, Ari RB",0/0,0,0,0,0,0,0,0,0,0,0
+278,"Mohamed Massaquoi, Cle WR  Q",0/0,0,0,0,0,0,0,40,507,1,56
+279,"Steve Slaton, Mia RB",0/0,0,0,0,0,0,0,0,0,0,0
+280,"Golden Tate, Sea WR",0/0,0,0,0,5,14,0,27,312,1,38
+281,"Danario Alexander, StL WR  Q",0/0,0,0,0,0,0,0,26,376,2,49
+282,"Brian Leonard, Cin RB",0/0,0,0,0,0,0,0,0,0,0,0
+283,"Nate Kaeding, SD K  P",0/0,0,0,0,0,0,0,0,0,0,126
+284,"Da'Rel Scott, NYG RB",0/0,0,0,0,0,0,0,0,0,0,0
+285,"Randy Bullock, Hou K",0/0,0,0,0,0,0,0,0,0,0,123
+286,"Brandon Saine, GB RB  Q",0/0,0,0,0,0,0,0,0,0,0,0
+287,Chiefs D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,110
+288,"Keiland Williams, Det RB",0/0,0,0,0,0,0,0,0,0,0,0
+289,"Kellen Davis, Chi TE",0/0,0,0,0,0,0,0,21,252,4,49
+290,"Chaz Schilens, NYJ WR  Q",0/0,0,0,0,0,0,0,23,308,1,36
+291,"Chris Rainey, Pit RB",0/0,0,0,0,0,0,0,0,0,0,0
+292,"Marcus Easley, Buf WR",0/0,0,0,0,0,0,0,24,331,1,39
+293,"Jamie Harper, Ten RB",0/0,0,0,0,0,0,0,0,0,0,0
+294,"Phillip Tanner*, Dal RB  O",0/0,0,0,0,0,0,0,0,0,0,0
+295,"John Carlson, Min TE  Q",0/0,0,0,0,0,0,0,21,274,2,39
+296,"Donnie Avery, Ind WR  Q",0/0,0,0,0,0,0,0,26,434,2,55
+297,"Billy Cundiff, Bal K",0/0,0,0,0,0,0,0,0,0,0,119
+298,"Dan Carpenter, Mia K",0/0,0,0,0,0,0,0,0,0,0,114
+299,Cardinals D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,107
+300,Giants D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,114
+301,"Terrance Ganaway, NYJ RB",0/0,0,0,0,0,0,0,0,0,0,0
+302,"Lex Hilliard, Min RB",0/0,0,0,0,0,0,0,0,0,0,0
+303,"Benjamin Watson, Cle TE",0/0,0,0,0,0,0,0,35,346,2,46
+304,"Greg Salas, StL WR",0/0,0,0,0,0,0,0,33,382,2,50
+305,"Tony Scheffler, Det TE",0/0,0,0,0,0,0,0,28,341,3,52
+306,"Steve Smith, StL WR",0/0,0,0,0,0,0,0,24,271,1,33
+307,"Olindo Mare, Car K",0/0,0,0,0,0,0,0,0,0,0,113
+308,Bengals D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,99
+309,"Johnny White, Buf RB",0/0,0,0,0,0,0,0,0,0,0,0
+310,"Matt Hasselbeck, Ten QB",174/289,1947,17,15,21,31,0,0,0,0,114
+311,"Mewelde Moore, Ind RB  Q",0/0,0,0,0,0,0,0,0,0,0,0
+312,"Blaine Gabbert, Jac QB",131/247,1413,12,9,47,114,1,0,0,0,95
+313,"Anthony Dixon, SF RB",0/0,0,0,0,0,0,0,0,0,0,0
+314,"DuJuan Harris, Jac RB",0/0,0,0,0,0,0,0,0,0,0,0
+315,"Jordan Todman, Min RB  P",0/0,0,0,0,0,0,0,0,0,0,0
+316,"Chad Henne, Jac QB",115/196,1310,12,8,18,99,1,0,0,0,91
+317,"Ryan Broyles, Det WR  Q",0/0,0,0,0,0,0,0,27,304,1,34
+318,"Jackie Battle, FA RB",0/0,0,0,0,0,0,0,0,0,0,0
+319,"Lawrence Tynes, NYG K",0/0,0,0,0,0,0,0,0,0,0,111
+320,"Cyrus Gray, KC RB",0/0,0,0,0,0,0,0,0,0,0,0
+321,"Dallas Clark, TB TE",0/0,0,0,0,0,0,0,26,247,3,42
+322,Rams D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,95
+323,"John Skelton, Ari QB",111/206,1354,8,9,13,61,0,0,0,0,72
+324,"David Garrard, Mia QB  Q",85/141,592,7,7,31,172,1,0,0,0,54
+325,"Anthony Allen, Bal RB",0/0,0,0,0,0,0,0,0,0,0,0
+326,"Dan Herron, Cin RB",0/0,0,0,0,0,0,0,0,0,0,0
+327,"Armon Binns, Cin WR",0/0,0,0,0,0,0,0,20,267,1,32
+328,"Josh Brown, NYJ K",0/0,0,0,0,0,0,0,0,0,0,108
+329,Dolphins D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,98
+330,"Kevin Boss, KC TE",0/0,0,0,0,0,0,0,21,252,2,37
+331,"Nick Toon, NO WR  Q",0/0,0,0,0,0,0,0,18,217,2,33
+332,"Early Doucet, Ari WR",0/0,0,0,0,0,0,0,0,0,0,0
+333,"Deji Karim, Ind RB",0/0,0,0,0,0,0,0,0,0,0,0
+334,"Tyrell Sutton, Sea RB",0/0,0,0,0,0,0,0,0,0,0,0
+335,"Dwayne Allen, Ind TE",0/0,0,0,0,0,0,0,20,206,3,38
+336,"Shaun Suisham, Pit K",0/0,0,0,0,0,0,0,0,0,0,108
+337,Patriots D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,73
+338,Raiders D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,103
+339,"Aaron Brown, Cin RB",0/0,0,0,0,0,0,0,0,0,0,0
+340,"Jerricho Cotchery, Pit WR",0/0,0,0,0,0,0,0,0,0,0,0
+341,"Connor Barth, TB K",0/0,0,0,0,0,0,0,0,0,0,107
+342,"Steven Hauschka, Sea K",0/0,0,0,0,0,0,0,0,0,0,106
+343,"Michael Smith, TB RB",0/0,0,0,0,0,0,0,0,0,0,0
+344,"Edwin Baker, SD RB",0/0,0,0,0,0,0,0,0,0,0,0
+345,"Deion Branch, NE WR  Q",0/0,0,0,0,0,0,0,0,0,0,0
+346,"Brandon Bolden, NE RB",0/0,0,0,0,0,0,0,0,0,0,0
+347,"Tauren Poole, Car RB",0/0,0,0,0,0,0,0,0,0,0,0
+348,"Lee Evans, Jac WR",0/0,0,0,0,0,0,0,0,0,0,0
+349,"Curtis Brinkley, SD RB",0/0,0,0,0,0,0,0,0,0,0,0
+350,Titans D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,89
+351,"Louis Murphy, Car WR  P",0/0,0,0,0,0,0,0,0,0,0,0
+352,"Jason Avant, Phi WR",0/0,0,0,0,0,0,0,0,0,0,0
+353,"Chris Cooley, Wsh TE",0/0,0,0,0,0,0,0,21,190,2,31
+354,"Todd Heap, Ari TE",0/0,0,0,0,0,0,0,27,297,1,35
+355,"Devin Hester, Chi WR",0/0,0,0,0,0,0,0,0,0,0,0
+356,"Kevin Ogletree, Dal WR",0/0,0,0,0,0,0,0,0,0,0,0
+357,"Harry Douglas, Atl WR  P",0/0,0,0,0,0,0,0,0,0,0,0
+358,"Ryan Tannehill, Mia QB",69/130,841,7,7,14,15,0,0,0,0,46
+359,"Chris Polk, Phi RB",0/0,0,0,0,0,0,0,0,0,0,0
+360,"Joe Webb, Min QB",51/91,530,3,4,26,130,2,0,0,0,46
+361,"Lance Kendricks, StL TE",0/0,0,0,0,0,0,0,29,277,1,33
+362,"Adrian Arrington*, NO WR  O",0/0,0,0,0,0,0,0,0,0,0,0
+363,Broncos D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,98
+364,"Brandon Myers, Oak TE  Q",0/0,0,0,0,0,0,0,18,171,0,17
+365,"David Gettis, Car WR  Q",0/0,0,0,0,0,0,0,0,0,0,0
+366,"Brad Smith, Buf WR",0/0,0,0,0,0,0,0,0,0,0,0
+367,"Greg Zuerlein, StL K",0/0,0,0,0,0,0,0,0,0,0,105
+368,"Rian Lindell, Buf K",0/0,0,0,0,0,0,0,0,0,0,105
+369,"Michael Jenkins, Min WR",0/0,0,0,0,0,0,0,0,0,0,0
+370,"Josh Cribbs, Cle WR",0/0,0,0,0,0,0,0,0,0,0,0
+371,"Rob Housler, Ari TE",0/0,0,0,0,0,0,0,0,0,0,0
+372,"Ryan Torain, FA RB",0/0,0,0,0,0,0,0,0,0,0,0
+373,"Luke Stocker, TB TE",0/0,0,0,0,0,0,0,0,0,0,0
+374,"Legedu Naanee, Mia WR",0/0,0,0,0,0,0,0,0,0,0,0
+375,"Visanthe Shiancoe, NE TE",0/0,0,0,0,0,0,0,0,0,0,0
+376,"Colt McCoy, Cle QB",61/107,640,4,3,17,71,0,0,0,0,40
+377,"James Casey, Hou TE, RB",0/0,0,0,0,0,0,0,0,0,0,0
+378,Jaguars D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,86
+379,"Jeremy Kerley, NYJ WR  Q",0/0,0,0,0,0,0,0,0,0,0,0
+380,"Brian Hoyer, NE QB",0/0,0,0,0,0,0,0,0,0,0,0
+381,"Delanie Walker, SF TE  Q",0/0,0,0,0,0,0,0,0,0,0,0
+382,"Randy McMichael, SD TE",0/0,0,0,0,0,0,0,0,0,0,0
+383,"Jerious Norwood, FA RB",0/0,0,0,0,0,0,0,0,0,0,0
+384,"Preston Parker, TB WR",0/0,0,0,0,0,0,0,0,0,0,0
+385,"Riley Cooper*, Phi WR  O",0/0,0,0,0,0,0,0,0,0,0,0
+386,"Tandon Doss, Bal WR  P",0/0,0,0,0,0,0,0,0,0,0,0
+387,"Johnny Knox*, Chi WR  O",0/0,0,0,0,0,0,0,0,0,0,0
+388,"Anthony Armstrong*, Wsh WR  O",0/0,0,0,0,0,0,0,0,0,0,0
+389,"Adam Vinatieri, Ind K",0/0,0,0,0,0,0,0,0,0,0,103
+390,"John Phillips, Dal TE  Q",0/0,0,0,0,0,0,0,0,0,0,0
+391,"Arrelious Benn*, TB WR  O",0/0,0,0,0,0,0,0,0,0,0,0
+392,"David Thomas, NO TE",0/0,0,0,0,0,0,0,0,0,0,0
+393,Redskins D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,82
+394,"Gary Barnidge, Car TE",0/0,0,0,0,0,0,0,0,0,0,0
+395,"Dane Sanzenbacher, Chi WR",0/0,0,0,0,0,0,0,0,0,0,0
+396,"Clay Harbor, Phi TE",0/0,0,0,0,0,0,0,0,0,0,0
+397,"Joseph Addai, FA RB",0/0,0,0,0,0,0,0,0,0,0,0
+398,"T.Y. Hilton, Ind WR",0/0,0,0,0,0,0,0,0,0,0,0
+399,"Dezmon Briscoe, Wsh WR",0/0,0,0,0,0,0,0,0,0,0,0
+400,"Jay Feely, Ari K",0/0,0,0,0,0,0,0,0,0,0,102
+401,"Ben Obomanu, Sea WR",0/0,0,0,0,0,0,0,0,0,0,0
+402,"Andre Holmes, Dal WR",0/0,0,0,0,0,0,0,0,0,0,0
+403,"Julian Edelman, NE WR",0/0,0,0,0,0,0,0,0,0,0,0
+404,Browns D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,74
+405,"Ryan Succop, KC K",0/0,0,0,0,0,0,0,0,0,0,101
+406,"Lousaka Polite, Atl RB",0/0,0,0,0,0,0,0,0,0,0,0
+407,"Chase Daniel, NO QB",0/0,0,0,0,0,0,0,0,0,0,0
+408,"Julius Thomas, Den TE",0/0,0,0,0,0,0,0,0,0,0,0
+409,"Brandon Stokley, Den WR",0/0,0,0,0,0,0,0,0,0,0,0
+410,"Roscoe Parrish, SD WR",0/0,0,0,0,0,0,0,0,0,0,0
+411,"Kyle Orton, Dal QB",0/0,0,0,0,0,0,0,0,0,0,0
+412,"Phil Dawson, Cle K",0/0,0,0,0,0,0,0,0,0,0,100
+413,Chargers D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,86
+414,"Quinn Porter, StL RB",0/0,0,0,0,0,0,0,0,0,0,0
+415,"Joe Adams, Car WR",0/0,0,0,0,0,0,0,0,0,0,0
+416,"Brandon Tate, Cin WR",0/0,0,0,0,0,0,0,0,0,0,0
+417,"Shaun Hill, Det QB",0/0,0,0,0,0,0,0,0,0,0,0
+418,"Matt Leinart, Oak QB",0/0,0,0,0,0,0,0,0,0,0,0
+419,"Josh Scobee, Jac K",0/0,0,0,0,0,0,0,0,0,0,100
+420,"Jordan Cameron, Cle TE  P",0/0,0,0,0,0,0,0,0,0,0,0
+421,"Devin Aromashodu, Min WR",0/0,0,0,0,0,0,0,0,0,0,0
+422,"Rex Grossman, Wsh QB",0/0,0,0,0,0,0,0,0,0,0,0
+423,"Cadillac Williams, FA RB",0/0,0,0,0,0,0,0,0,0,0,0
+424,Vikings D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,80
+425,"Brandon Gibson, StL WR  Q",0/0,0,0,0,0,0,0,0,0,0,0
+426,"Jason Campbell, Chi QB",0/0,0,0,0,0,0,0,0,0,0,0
+427,"Adrien Robinson, NYG TE",0/0,0,0,0,0,0,0,0,0,0,0
+428,"T.J. Yates, Hou QB",0/0,0,0,0,0,0,0,0,0,0,0
+429,"Marvin Jones, Cin WR",0/0,0,0,0,0,0,0,0,0,0,0
+430,"A.J. Jenkins, SF WR",0/0,0,0,0,0,0,0,0,0,0,0
+431,"Sammie Stroughter, TB WR",0/0,0,0,0,0,0,0,0,0,0,0
+432,"Blair Walsh, Min K",0/0,0,0,0,0,0,0,0,0,0,98
+433,"Clyde Gates, Mia WR",0/0,0,0,0,0,0,0,0,0,0,0
+434,"Ladarius Green, SD TE",0/0,0,0,0,0,0,0,0,0,0,0
+435,"Brian Robiskie, Jac WR",0/0,0,0,0,0,0,0,0,0,0,0
+436,"John Kasay, NO K",0/0,0,0,0,0,0,0,0,0,0,0
+437,"Josh Johnson, SF QB",0/0,0,0,0,0,0,0,0,0,0,0
+438,"Clinton Portis, FA RB",0/0,0,0,0,0,0,0,0,0,0,0
+439,"Deon Butler, Sea WR",0/0,0,0,0,0,0,0,0,0,0,0
+440,"Lavelle Hawkins, Ten WR  P",0/0,0,0,0,0,0,0,0,0,0,0
+441,Saints D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,77
+442,"Kris Durham, Sea WR",0/0,0,0,0,0,0,0,0,0,0,0
+443,"Michael Egnew, Mia TE",0/0,0,0,0,0,0,0,0,0,0,0
+444,"Keshawn Martin, Hou WR",0/0,0,0,0,0,0,0,0,0,0,0
+445,"Graham Harrell, GB QB",0/0,0,0,0,0,0,0,0,0,0,0
+446,"Jarius Wright, Min WR",0/0,0,0,0,0,0,0,0,0,0,0
+447,"Nick Folk, NYJ K",0/0,0,0,0,0,0,0,0,0,0,0
+448,"Stephen Williams, Ari WR  Q",0/0,0,0,0,0,0,0,0,0,0,0
+449,"Seyi Ajirotutu, Car WR",0/0,0,0,0,0,0,0,0,0,0,0
+450,"Nick Novak, SD K",0/0,0,0,0,0,0,0,0,0,0,0
+451,"Maurice Morris, FA RB",0/0,0,0,0,0,0,0,0,0,0,0
+452,"Charles Clay, Mia TE",0/0,0,0,0,0,0,0,0,0,0,0
+453,"Jason Hill, Den WR",0/0,0,0,0,0,0,0,0,0,0,0
+454,"Vince Young, Buf QB",0/0,0,0,0,0,0,0,0,0,0,0
+455,"Tarvaris Jackson, Sea QB",0/0,0,0,0,0,0,0,0,0,0,0
+456,Buccaneers D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,78
+457,"Josh Gordon, Cle WR",0/0,0,0,0,0,0,0,0,0,0,0
+458,"Graham Gano, Wsh K  P",0/0,0,0,0,0,0,0,0,0,0,0
+459,"Michael Hoomanawanui, StL TE",0/0,0,0,0,0,0,0,0,0,0,0
+460,"Byron Leftwich, Pit QB",0/0,0,0,0,0,0,0,0,0,0,0
+461,"Charlie Whitehurst, SD QB  Q",0/0,0,0,0,0,0,0,0,0,0,0
+462,"Dan Orlovsky, TB QB",0/0,0,0,0,0,0,0,0,0,0,0
+463,"Brady Quinn, KC QB",0/0,0,0,0,0,0,0,0,0,0,0
+464,"Thomas Jones, FA RB",0/0,0,0,0,0,0,0,0,0,0,0
+465,"Cecil Shorts, Jac WR",0/0,0,0,0,0,0,0,0,0,0,0
+466,"Shayne Graham, Hou K",0/0,0,0,0,0,0,0,0,0,0,0
+467,"Zach Miller, Sea TE  Q",0/0,0,0,0,0,0,0,39,413,3,59
+468,"Mike Kafka, Phi QB  Q",0/0,0,0,0,0,0,0,0,0,0,0
+469,"Caleb Hanie, Den QB",0/0,0,0,0,0,0,0,0,0,0,0
+470,"David Carr, NYG QB",0/0,0,0,0,0,0,0,0,0,0,0
+471,Panthers D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,86
+472,"Orson Charles, Cin TE",0/0,0,0,0,0,0,0,0,0,0,0
+473,"Derek Anderson, Car QB",0/0,0,0,0,0,0,0,0,0,0,0
+474,"Kellen Clemens, StL QB",0/0,0,0,0,0,0,0,0,0,0,0
+475,"Earnest Graham, FA RB",0/0,0,0,0,0,0,0,0,0,0,0
+476,"Anthony Gonzalez, FA WR",0/0,0,0,0,0,0,0,0,0,0,0
+477,"D.J. Williams, GB TE  P",0/0,0,0,0,0,0,0,0,0,0,0
+478,"Chris Redman, Atl QB",0/0,0,0,0,0,0,0,0,0,0,0
+479,"Tyrod Taylor, Bal QB",0/0,0,0,0,0,0,0,0,0,0,0
+480,"Bruce Gradkowski, Cin QB",0/0,0,0,0,0,0,0,0,0,0,0
+481,"Drew Stanton, Ind QB",0/0,0,0,0,0,0,0,0,0,0,0
+482,"Evan Rodriguez, Chi TE",0/0,0,0,0,0,0,0,0,0,0,0
+483,Colts D/ST D/ST,0/0,0,0,0,0,0,0,0,0,0,65
+484,"Ryan Longwell, FA K",0/0,0,0,0,0,0,0,0,0,0,0
+485,"Chester Taylor, FA RB",0/0,0,0,0,0,0,0,0,0,0,0
+486,"Matt Willis, Den WR",0/0,0,0,0,0,0,0,0,0,0,0
+487,"Colin Kaepernick, SF QB",0/0,0,0,0,0,0,0,0,0,0,0
+488,"Russell Wilson, Sea QB",0/0,0,0,0,0,0,0,0,0,0,0
+489,"Jeff King, Ari TE  P",0/0,0,0,0,0,0,0,0,0,0,0
+490,"Stephen McGee, Dal QB",0/0,0,0,0,0,0,0,0,0,0,0
+491,"Ryan Mallett, NE QB",0/0,0,0,0,0,0,0,0,0,0,0
+492,"Seneca Wallace, Cle QB",0/0,0,0,0,0,0,0,0,0,0,0
+493,"Dante Rosario, SD TE",0/0,0,0,0,0,0,0,0,0,0,0
+494,"Terrelle Pryor, Oak QB",0/0,0,0,0,0,0,0,0,0,0,0
+495,"Kirk Cousins, Wsh QB",0/0,0,0,0,0,0,0,0,0,0,0
+496,"Brock Osweiler, Den QB",0/0,0,0,0,0,0,0,0,0,0,0
+497,"B.J. Coleman, GB QB",0/0,0,0,0,0,0,0,0,0,0,0
+498,"Jerome Harrison*, FA RB  O",0/0,0,0,0,0,0,0,0,0,0,0
+499,"Taylor Price*, Jac WR  O",0/0,0,0,0,0,0,0,0,0,0,0
+500,"Andrew Quarless*, GB TE  O",0/0,0,0,0,0,0,0,0,0,0,0
