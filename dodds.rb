@@ -8,7 +8,7 @@ DB[:defense].truncate
 DB[:kickers].truncate
 
 puts 'Inserting QBs'
-CSV.open('dodds/qb.csv', {:headers => true, :header_converters => :downcase}).each do |row|
+CSV.open('data/dodds/qb.csv', {:headers => true, :header_converters => :downcase}).each do |row|
   DB[:offense].insert :name => "#{row['first']} #{row['last']}",
                       :team => row['team'],
                       :position => 'QB',
@@ -25,7 +25,7 @@ CSV.open('dodds/qb.csv', {:headers => true, :header_converters => :downcase}).ea
 end
 
 puts 'Inserting RBs'
-CSV.open('dodds/rb.csv', {:headers => true, :header_converters => :downcase}).each do |row|
+CSV.open('data/dodds/rb.csv', {:headers => true, :header_converters => :downcase}).each do |row|
   DB[:offense].insert :name => "#{row['first']} #{row['last']}",
                       :team => row['team'],
                       :position => 'RB',
@@ -40,7 +40,7 @@ CSV.open('dodds/rb.csv', {:headers => true, :header_converters => :downcase}).ea
 end
 
 puts 'Inserting WRs'
-CSV.open('dodds/wr.csv', {:headers => true, :header_converters => :downcase}).each do |row|
+CSV.open('data/dodds/wr.csv', {:headers => true, :header_converters => :downcase}).each do |row|
   DB[:offense].insert :name => "#{row['first']} #{row['last']}",
                       :team => row['team'],
                       :position => 'WR',
@@ -55,7 +55,7 @@ CSV.open('dodds/wr.csv', {:headers => true, :header_converters => :downcase}).ea
 end
 
 puts 'Inserting TEs'
-CSV.open('dodds/te.csv', {:headers => true, :header_converters => :downcase}).each do |row|
+CSV.open('data/dodds/te.csv', {:headers => true, :header_converters => :downcase}).each do |row|
   DB[:offense].insert :name => "#{row['first']} #{row['last']}",
                       :team => row['team'],
                       :position => 'TE',
@@ -67,7 +67,7 @@ CSV.open('dodds/te.csv', {:headers => true, :header_converters => :downcase}).ea
 end
 
 puts 'Inserting Ks'
-CSV.open('dodds/k.csv', {:headers => true, :header_converters => :downcase}).each do |row|
+CSV.open('data/dodds/k.csv', {:headers => true, :header_converters => :downcase}).each do |row|
   DB[:kickers].insert :name => "#{row['first']} #{row['last']}",
                       :team => row['team'],
                       :pats => row['patmade'],
@@ -77,7 +77,7 @@ CSV.open('dodds/k.csv', {:headers => true, :header_converters => :downcase}).eac
 end
 
 puts 'Inserting DEF'
-CSV.open('dodds/def.csv', {:headers => true, :header_converters => :downcase}).each do |row|
+CSV.open('data/dodds/def.csv', {:headers => true, :header_converters => :downcase}).each do |row|
   DB[:defense].insert :team => row['team'],
                       :points_allowed => row['allowed'],
                       :sacks => row['sacks'],
