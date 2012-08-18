@@ -27,6 +27,7 @@ DB.create_table :offense do
   Decimal :reception_touchdowns
   Decimal :fumbles
   Decimal :adp
+  Decimal :value
   TrueClass :drafted, :default => false
   TrueClass :sleeper, :default => false
   TrueClass :injury, :default => false
@@ -36,6 +37,8 @@ end
 DB.create_table :defense do
   primary_key :id 
   String :team
+  String :name
+  String :position, :default => 'DEF'
   Decimal :points_allowed
   Decimal :sacks
   Decimal :safeties 
@@ -44,6 +47,7 @@ DB.create_table :defense do
   Decimal :touchdowns
   Decimal :blocked_fgs
   Decimal :adp
+  Decimal :value
   TrueClass :drafted, :default => false
   TrueClass :sleeper, :default => false
   TrueClass :injury, :default => false
@@ -54,6 +58,7 @@ DB.create_table :kickers do
   primary_key :id 
   String :name
   String :team
+  String :position, :default => 'K'
   Decimal :pats
   Decimal :fg_made
   Decimal :fg_miss
@@ -63,6 +68,7 @@ DB.create_table :kickers do
   Decimal :"40-49"
   Decimal :over_50
   Decimal :adp
+  Decimal :value
   TrueClass :drafted, :default => false
   TrueClass :sleeper, :default => false
   TrueClass :injury, :default => false

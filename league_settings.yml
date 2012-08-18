@@ -1,3 +1,6 @@
+requirements: [QB, WR, WR, WR, RB, RB, TE, FLEX, K, DEF]
+teams: 10
+
 offense:
   completions: 0
   pass_yards: 0.04

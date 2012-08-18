@@ -25,7 +25,6 @@ module Calculate
       all = query.all
       all.each do |p|
         p[:table] = table
-        p[:value] = Object.const_get(table.capitalize).expected_points(p)
       end
     end
 

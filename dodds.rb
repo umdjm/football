@@ -1,6 +1,9 @@
 require 'rubygems'
 require 'sequel'
 require 'csv'
+require './lib/offense'
+require './lib/defense'
+require './lib/kickers'
 
 DB = Sequel.sqlite('football.sqlite')
 DB[:offense].truncate
@@ -87,3 +90,8 @@ CSV.open('data/dodds/def.csv', {:headers => true, :header_converters => :downcas
                       :touchdowns => row['tds'],
                       :adp => row['adp']
 end
+
+puts 'Calculating Values'
+DB[:offense].all { |p| DB[:offense].filter(:id => p[:id]).update(:value => Offense.expected_points(p)) }
+DB[:defense].all { |p| DB[:defense].filter(:id => p[:id]).update(:value => Defense.expected_points(p)) }
+DB[:kickers].all { |p| DB[:kickers].filter(:id => p[:id]).update(:value => Kickers.expected_points(p)) }
