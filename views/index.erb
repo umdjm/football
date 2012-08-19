@@ -13,6 +13,7 @@
       <th>ADP</th>
       <th>Value</th>
       <th></th>
+      <th></th>
     </thead>
     <tbody>
       <% @players.each do |player| %>
@@ -25,37 +26,53 @@
           </td>
           <td><%= player[:team] %></td>
           <td><%= player[:position] %></td>
-          <td><%= sprintf("%0.3f", player[:adp]) %></td>
+          <td><%= player[:adp].to_i %></td>
           <td><%= sprintf("%0.3f", player[:value]) %></td>
-          <td>
-            <% unless player[:drafted] %>
+          <% unless player[:drafted] %>
+            <td>
               <form class= "draft" action=<%= "#{player[:table]}/draft" %> method="post">
                 <input type="hidden" name="player_id" value=<%= player[:id] %> />
                 <input type="submit" value="draft" />
               </form>
-            <% end %>
-          </td>
+              </td>
+              <td>
+              <form class= "take" action=<%= "#{player[:table]}/take" %> method="post">
+                <input type="hidden" name="player_id" value=<%= player[:id] %> />
+                <input type="submit" value="take" />
+              </form>
+            </td>
+          <% else %>
+            <td /><td />
+          <% end %>
         </tr>
       <% end %>
     </tbody>
   </table>
+  <div id='team'>
+    <h5>My Team</h5>
+    <% @team.each do |player| %>
+      <p><%= "#{player[:name]} #{player[:team]} (#{player[:position]})" %></p>
+    <% end %>
+  </div>
   <div id='query'>
-    <a href="/">All</a>
-    <a href="/offense">Offense</a>
-    <a href="/defense">Defense</a>
-    <a href="/kickers">Kickers</a><br />
     <form action="/" method="get">
-      Position: <input type="text" name="position" /><br />
-      Limit: <input type="text" name="limit" /><br />
+      Position: <input type="text" name="position" value="<%= params[:position] %>"/><br />
+      Limit: <input type="text" name="limit" value="<%= params[:limit] %>" /><br />
       Hide Drafted: <input type="checkbox" name="hide-drafted" /><br />
       <input type="submit" value="Search" />
+      <a href="/">All</a>
     </form>
+  </div>
+  <div id='recommend'>
+    <h4 class="left">Recommended</h4>
+    <button id='recommend-button'>Find</button>
   </div>
 </body>
 <foot>
   <script language="javascript" type="text/javascript" src="/javascripts/jquery-1.7.1.min.js" ></script>
   <script language="javascript" type="text/javascript" src="/javascripts/jquery-tablesorter.min.js" ></script>
   <script language="javascript" type="text/javascript" src="/javascripts/jquery.heatcolor.0.0.1.pack.js" ></script>
+  <script language="javascript" type="text/javascript" src="/javascripts/recommended.js" ></script>
   <script>
     $(document).ready(function() { 
       $("#players_table").tablesorter({sortList: [[4,1]]});

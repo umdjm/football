@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'sequel'
 
 DB = Sequel.sqlite('football.sqlite')
@@ -29,6 +28,7 @@ DB.create_table :offense do
   Decimal :adp
   Decimal :value
   TrueClass :drafted, :default => false
+  TrueClass :mine, :default => false
   TrueClass :sleeper, :default => false
   TrueClass :injury, :default => false
   TrueClass :favorite, :default => false
@@ -49,6 +49,7 @@ DB.create_table :defense do
   Decimal :adp
   Decimal :value
   TrueClass :drafted, :default => false
+  TrueClass :mine, :default => false
   TrueClass :sleeper, :default => false
   TrueClass :injury, :default => false
   TrueClass :favorite, :default => false
@@ -70,6 +71,7 @@ DB.create_table :kickers do
   Decimal :adp
   Decimal :value
   TrueClass :drafted, :default => false
+  TrueClass :mine, :default => false
   TrueClass :sleeper, :default => false
   TrueClass :injury, :default => false
   TrueClass :favorite, :default => false

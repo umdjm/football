@@ -15,6 +15,7 @@ th, td {
   min-width: 45px;
 }
 
+.left { float: left; }
 .red { color: red; }
 .orange { color: orange; }
 .green { color: green; }
@@ -27,11 +28,29 @@ th, td {
   font-weight: none;
 }
 
+#team {
+  position: fixed;
+  border: double black;
+  left: 525px;
+  top: 30px;
+  padding: 20px;
+  width: 200px;
+}
+
 #query {
   position: fixed;
   border: double black;
   left: 800px;
   top: 30px;
   padding: 20px;
+  width: 200px;
 }
 
+#recommend {
+  position: fixed;
+  border: double black;
+  left: 800px;
+  top: 200px;
+  padding: 20px;
+  width: 200px;
+}

@@ -1,22 +1,15 @@
-require 'rubygems'
-require 'ai4r'
-require 'sequel'
-require 'yaml'
-require './lib/calculate'
+CONFIG = YAML.load_file('league_settings.yml')
 
 module Recommend
-  CONFIG = YAML.load_file('league_settings.yml')
-
   module Ai4r::GeneticAlgorithm
     class Chromosome
-      attr_reader :team, :id
+      attr_reader :team
 
       class << self
         def set_requirements players, requirements
           @@players      = players
           @@requirements = requirements
           @@rounds       = requirements.size
-          @@id           = 0
         end
 
         def seed
@@ -30,11 +23,7 @@ module Recommend
             players = players[9..-1]
             requirements = requirements[1..-1]
           end
-          c = Chromosome.new team
-          #puts "Seed #{c.id}:"
-          #team.each_with_index{|p, i| puts "#{i}: #{p[:adp].to_i}. #{p[:name]} #{p[:team]} #{p[:position]}"}
-          #puts "============"
-          c
+          Chromosome.new team
         end
 
         def mutate chromosome
@@ -42,13 +31,9 @@ module Recommend
           player1, player2 = chromosome.team[rounds.first], chromosome.team[rounds.last]
           players = @@players.dup
           players.delete_if{|p| chromosome.team.include?(p)}
-          new_player1 = players.dup.sort_by{|p| p[:adp]}[(10 * rounds.first)..-1].keep_if{|p| p[:position] == player2[:position]}.sort_by{|p| p[:value]}.reverse.first
+          new_player1 = players[(10 * rounds.first)..-1].find{|p| p[:position] == player2[:position]}
           players.delete(new_player1)
-          new_player2 = players.dup.sort_by{|p| p[:adp]}[(10 * rounds.last)..-1].keep_if{|p| p[:position] == player1[:position]}.sort_by{|p| p[:value]}.reverse.first
-          #puts "Mutate #{chromosome.id}:"
-          #puts "Swapping in #{new_player1[:adp].to_i}. #{new_player1[:name]} #{new_player1[:team]} #{new_player1[:position]} at #{rounds.first}"
-          #puts "Swapping in #{new_player2[:adp].to_i}. #{new_player2[:name]} #{new_player2[:team]} #{new_player2[:position]} at #{rounds.last}"
-          #puts "============"
+          new_player2 = players[(10 * rounds.last)..-1].find{|p| p[:position] == player1[:position]}
           old_fitness = chromosome.fitness
           old1 = chromosome.swap rounds.first, new_player1
           old2 = chromosome.swap rounds.last, new_player2
@@ -82,18 +67,12 @@ module Recommend
             end
           end
 
-          c = Chromosome.new team
-          #puts "Reproduce #{a.id} + #{b.id} = #{c.id}:"
-          #team.each_with_index{|p, i| puts "#{i}: #{p[:adp].to_i}. #{p[:name]} #{p[:team]} #{p[:position]}"}
-          #puts "============"
-          c
+          Chromosome.new team
         end
       end
 
       def initialize team
         @team = team
-        @id   = @@id
-        @@id  += 1
       end
 
       def fitness
@@ -106,13 +85,14 @@ module Recommend
     end
   end
 
-  def self.generate_team
-    Ai4r::GeneticAlgorithm::Chromosome.set_requirements Calculate.all.sort_by{|p| p[:adp]}, CONFIG['requirements']
-    result = Ai4r::GeneticAlgorithm::GeneticSearch.new(80, 30).run
+  def self.generate_team players, requirements
+    puts "Requirements: #{requirements}"
+    c = Ai4r::GeneticAlgorithm::Chromosome
+    Ai4r::GeneticAlgorithm::Chromosome.set_requirements players, requirements
+    result = Ai4r::GeneticAlgorithm::GeneticSearch.new(40, 20).run
     puts "Team:"
     result.team.each {|player| puts " #{player[:adp].to_i}. #{player[:name]} #{player[:team]} (#{player[:position]})" }
     puts "Total points: #{result.fitness.to_f}"
+    result.team
   end
 end
-
-Recommend.generate_team
