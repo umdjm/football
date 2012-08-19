@@ -4,8 +4,8 @@ teams: 10
 offense:
   completions: 0
   pass_yards: 0.04
-  pass_touchdowns: 6
-  interceptions: -2
+  pass_touchdowns: 4
+  interceptions: -1
   rush_yards: 0.1
   rush_touchdowns: 6
   receptions: 0

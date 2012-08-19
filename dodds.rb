@@ -1,5 +1,6 @@
 require 'sequel'
 require 'csv'
+require 'yaml'
 require './lib/offense'
 require './lib/defense'
 require './lib/kickers'
