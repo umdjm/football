@@ -1,4 +1,4 @@
-requirements: [QB, WR, WR, WR, RB, RB, TE, FLEX, K, DEF]
+requirements: [QB, QB, WR, WR, WR, WR, RB, RB, RB, TE, FLEX]
 teams: 10
 
 offense:

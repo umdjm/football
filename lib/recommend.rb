@@ -17,7 +17,7 @@ module Recommend
           requirements = @@requirements.shuffle
           players = @@players.dup
           @@rounds.times do |round|
-            player = players.dup.keep_if{|p| p[:position] == requirements.first || 'FLEX' == requirements.first}.sort_by{|p| p[:value]}.reverse.first
+            player = players.dup.keep_if{|p| p[:position] == requirements.first || ('FLEX' == requirements.first && (p[:position] == 'WR' || p[:position] == 'RB' || p[:position] == 'TE'))}.sort_by{|p| p[:value]}.reverse.first
             team << player
             players.delete player
             players = players[9..-1]
@@ -57,7 +57,7 @@ module Recommend
           requirements.shuffle!
           @@rounds.times do |round|
             if team[round].nil?
-              player = players.dup.keep_if{|p| p[:position] == requirements.first || 'FLEX' == requirements.first}.sort_by{|p| p[:value]}.reverse.first
+              player = players.dup.keep_if{|p| p[:position] == requirements.first || ('FLEX' == requirements.first && (p[:position] == 'WR' || p[:position] == 'RB' || p[:position] == 'TE'))}.sort_by{|p| p[:value]}.reverse.first
               team[round] = player
               players.delete player
               players = players[9..-1]
@@ -76,7 +76,7 @@ module Recommend
       end
 
       def fitness
-        return team.inject(0){|acc, p| acc + p[:value]}
+        team.inject(0){|acc, p| acc + p[:value]}
       end
 
       def swap index, new_player
@@ -87,7 +87,6 @@ module Recommend
 
   def self.generate_team players, requirements
     puts "Requirements: #{requirements}"
-    c = Ai4r::GeneticAlgorithm::Chromosome
     Ai4r::GeneticAlgorithm::Chromosome.set_requirements players, requirements
     result = Ai4r::GeneticAlgorithm::GeneticSearch.new(40, 20).run
     puts "Team:"
