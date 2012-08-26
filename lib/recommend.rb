@@ -85,10 +85,10 @@ module Recommend
     end
   end
 
-  def self.generate_team players, requirements
+  def self.generate_team players, requirements, seeds, generations
     puts "Requirements: #{requirements}"
     Ai4r::GeneticAlgorithm::Chromosome.set_requirements players, requirements
-    result = Ai4r::GeneticAlgorithm::GeneticSearch.new(40, 20).run
+    result = Ai4r::GeneticAlgorithm::GeneticSearch.new(seeds, generations).run
     puts "Team:"
     result.team.each {|player| puts " #{player[:adp].to_i}. #{player[:name]} #{player[:team]} (#{player[:position]})" }
     puts "Total points: #{result.fitness.to_f}"
