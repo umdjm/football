@@ -27,11 +27,13 @@ DB.create_table :offense do
   Decimal :fumbles
   Decimal :adp
   Decimal :value
+  Decimal :bye
   TrueClass :drafted, :default => false
   TrueClass :mine, :default => false
   TrueClass :sleeper, :default => false
   TrueClass :injury, :default => false
   TrueClass :favorite, :default => false
+  TrueClass :rookie, :default => false
 end
 
 DB.create_table :defense do

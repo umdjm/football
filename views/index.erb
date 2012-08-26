@@ -8,6 +8,7 @@
   <table id='players_table' class='tablesorter'>
     <thead>
       <th>Player</th>
+      <th>Bye</th>
       <th>Team</th>
       <th>Position</th>
       <th>ADP</th>
@@ -20,10 +21,11 @@
         <tr id="<%= player[:id] %>" class="<%= " drafted" if player[:drafted] %>">
           <td>
             <% if player[:injury] %><img height=16px width=16px src="css/injury.png" /><% end %>
-            <% if player[:prospect] %><img height=16px width=16px src="css/fire.png" /><% end %>
+            <% if player[:rookie] %><img height=16px width=16px src="css/fire.png" /><% end %>
             <% if player[:favorite] %><img height=16px width=16px src="css/star.png" /><% end %>
             <%= player[:name] %>
           </td>
+          <td><%= player[:bye].to_i %></td>
           <td><%= player[:team] %></td>
           <td><%= player[:position] %></td>
           <td><%= player[:adp].to_i %></td>
@@ -51,7 +53,7 @@
   <div id='team'>
     <h5>My Team</h5>
     <% @team.each do |player| %>
-      <p><%= "#{player[:name]} #{player[:team]} (#{player[:position]})" %></p>
+      <p><%= "#{player[:position]} #{player[:name]} (#{player[:team]}/#{player[:bye].to_i})" %></p>
     <% end %>
   </div>
   <div id='query'>
@@ -75,8 +77,8 @@
   <script language="javascript" type="text/javascript" src="/javascripts/recommended.js" ></script>
   <script>
     $(document).ready(function() { 
-      $("#players_table").tablesorter({sortList: [[4,1]]});
-      $('#players_table > tbody > tr').heatcolor(function() { return $("td:nth-child(5)",this).text(); });
+      $("#players_table").tablesorter({sortList: [[5,1]]});
+      $('#players_table > tbody > tr').heatcolor(function() { return $("td:nth-child(6)",this).text(); });
     });
   </script> 
 </foot>
