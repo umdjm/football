@@ -1,7 +1,7 @@
 requirements: [QB, QB, WR, WR, WR, WR, RB, RB, RB, TE, FLEX]
 teams: 10
 
-offense:
+scoring:
   completions: 0
   pass_yards: 0.04
   pass_touchdowns: 4
@@ -13,54 +13,12 @@ offense:
   reception_touchdowns: 6
   conversions: 2
   fumbles: -2
-
-kickers:
   fg_made: 3
   fg_miss: 0
   pats: 1
-
-defense:
   sacks: 1
-  interceptions: 2
-  fumbles: 2
-  touchdowns: 6
+  defensive_interceptions: 2
+  defensive_fumbles: 2
+  defensive_touchdowns: 6
   safeties: 2
   blocked_fgs: 2
-  points_allowed:
-    0: 10
-    1: 7
-    2: 7
-    3: 7
-    4: 7
-    5: 7
-    6: 7
-    7: 4
-    8: 4
-    9: 4
-    10: 4
-    11: 4
-    12: 4
-    13: 4
-    14: 1
-    15: 1
-    16: 1
-    17: 1
-    18: 1
-    19: 1
-    20: 1
-    21: 0
-    22: 0
-    23: 0
-    24: 0
-    25: 0
-    26: 0
-    27: 0
-    28: -1
-    29: -1
-    30: -1
-    31: -1
-    32: -1
-    33: -1
-    34: -1
-    35: -4
-

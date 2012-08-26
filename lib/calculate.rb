@@ -3,42 +3,44 @@ module Calculate
   CONFIG = YAML.load_file('league_settings.yml')
 
   class << self
-    def all opts = {}
-      players(:offense, opts) + players(:defense, opts) + players(:kickers, opts)
-    end
-
     def reset
-      [:offense, :defense, :kickers].each do |table|
-        Calculate::DB[table].update(:drafted => false)
-      end
+      Calculate::DB[:players].update(:drafted => false)
     end
 
-    def players table, opts = {}
-      query = Calculate::DB[table].order(:value).reverse
+    def players opts = {}
+      query = Calculate::DB[:players].order(:value).reverse
       query = query.filter(:position => opts['position'].upcase) if opts['position'] && !opts['position'].empty?
       query = opts['limit'] && !opts['limit'].empty? ? query.limit(opts['limit']) : query.limit(500)
       query = query.filter(:mine => true) if opts['mine']
       query = query.filter(:drafted => false) if opts['hide-drafted']
-      all = query.all
-      all.each do |p|
-        p[:table] = table
-      end
+      query.all
     end
 
-    def draft table, player_id
-      Calculate::DB[table].filter(:id => player_id).update(:drafted => true)
+    def draft player_id
+      Calculate::DB[:players].filter(:id => player_id).update(:drafted => true)
     end
 
-    def take table, player_id
-      Calculate::DB[table].filter(:id => player_id).update(:mine => true, :drafted => true)
+    def take player_id
+      Calculate::DB[:players].filter(:id => player_id).update(:mine => true, :drafted => true)
     end
 
     def requirements
       mine = []
       requirements = CONFIG['requirements']
-      [:offense, :defense, :kickers].each { |table| mine += Calculate::DB[table].filter(:mine => true).map{|p| p[:position]} }
+      mine += Calculate::DB[:players].filter(:mine => true).map{|p| p[:position]}
       mine.each { |taken| requirements.delete_at(requirements.index(taken) || requirements.index('FLEX')) }
       requirements
+    end
+
+    def expected_points player
+      [:completions, :pass_yards, :pass_touchdowns, :interceptions,
+       :rush_yards, :rush_touchdowns,
+       :receptions, :reception_yards, :reception_touchdowns,
+       :conversions, :fumbles,
+       :sacks, :interceptions, :fumbles, :touchdowns, :safeties, :blocked_fgs,
+       :fg_made, :fg_miss, :pats].inject(0) do |acc, attr|
+        acc + (player[attr] ? Calculate::CONFIG['scoring'][attr.to_s] * (player[attr] || 0) : 0)
+      end
     end
   end
 end

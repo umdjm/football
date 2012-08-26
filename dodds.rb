@@ -1,18 +1,14 @@
 require 'sequel'
 require 'csv'
 require 'yaml'
-require './lib/offense'
-require './lib/defense'
-require './lib/kickers'
+require './lib/calculate'
 
 DB = Sequel.sqlite('football.sqlite')
-DB[:offense].truncate
-DB[:defense].truncate
-DB[:kickers].truncate
+DB[:players].truncate
 
 puts 'Inserting QBs'
 CSV.open('data/dodds/qb.csv', {:headers => true, :header_converters => :downcase}).each do |row|
-  DB[:offense].insert :name => "#{row['first']} #{row['last']}",
+  DB[:players].insert :name => "#{row['first']} #{row['last']}",
                       :team => row['team'],
                       :position => 'QB',
                       :completions => row['comp'],
@@ -29,7 +25,7 @@ end
 
 puts 'Inserting RBs'
 CSV.open('data/dodds/rb.csv', {:headers => true, :header_converters => :downcase}).each do |row|
-  DB[:offense].insert :name => "#{row['first']} #{row['last']}",
+  DB[:players].insert :name => "#{row['first']} #{row['last']}",
                       :team => row['team'],
                       :position => 'RB',
                       :rushes => row['rushatt'],
@@ -44,7 +40,7 @@ end
 
 puts 'Inserting WRs'
 CSV.open('data/dodds/wr.csv', {:headers => true, :header_converters => :downcase}).each do |row|
-  DB[:offense].insert :name => "#{row['first']} #{row['last']}",
+  DB[:players].insert :name => "#{row['first']} #{row['last']}",
                       :team => row['team'],
                       :position => 'WR',
                       :rushes => row['rushatt'],
@@ -59,7 +55,7 @@ end
 
 puts 'Inserting TEs'
 CSV.open('data/dodds/te.csv', {:headers => true, :header_converters => :downcase}).each do |row|
-  DB[:offense].insert :name => "#{row['first']} #{row['last']}",
+  DB[:players].insert :name => "#{row['first']} #{row['last']}",
                       :team => row['team'],
                       :position => 'TE',
                       :receptions => row['rec'],
@@ -71,7 +67,8 @@ end
 
 puts 'Inserting Ks'
 CSV.open('data/dodds/k.csv', {:headers => true, :header_converters => :downcase}).each do |row|
-  DB[:kickers].insert :name => "#{row['first']} #{row['last']}",
+  DB[:players].insert :name => "#{row['first']} #{row['last']}",
+                      :positiion => 'K',
                       :team => row['team'],
                       :pats => row['patmade'],
                       :fg_made => row['fgmade'],
@@ -81,7 +78,8 @@ end
 
 puts 'Inserting DEF'
 CSV.open('data/dodds/def.csv', {:headers => true, :header_converters => :downcase}).each do |row|
-  DB[:defense].insert :team => row['team'],
+  DB[:players].insert :team => row['team'],
+                      :position => 'K',
                       :points_allowed => row['allowed'],
                       :sacks => row['sacks'],
                       :safeties => row['safeties'],
@@ -92,6 +90,4 @@ CSV.open('data/dodds/def.csv', {:headers => true, :header_converters => :downcas
 end
 
 puts 'Calculating Values'
-DB[:offense].all { |p| DB[:offense].filter(:id => p[:id]).update(:value => Offense.expected_points(p)) }
-DB[:defense].all { |p| DB[:defense].filter(:id => p[:id]).update(:value => Defense.expected_points(p)) }
-DB[:kickers].all { |p| DB[:kickers].filter(:id => p[:id]).update(:value => Kickers.expected_points(p)) }
+DB[:players].all { |p| DB[:players].filter(:id => p[:id]).update(:value => Calculate.expected_points(p)) }

@@ -23,7 +23,7 @@ puts 'Updating Rookies'
  'LaMichael James',
  'Chris Rainey',
  'Ryan Tannehill'].each do |player|
-    DB[:offense].where(:name => player).update(:rookie => true)
+    DB[:players].where(:name => player).update(:rookie => true)
  end
 
 puts 'Updating Injured'
@@ -41,7 +41,7 @@ puts 'Updating Injured'
  'Adrian Arrington',
  'Ryan Mathews',
  'Marc Mariani'].each do |player|
-    DB[:offense].where(:name => player).update(:injury => true)
+    DB[:players].where(:name => player).update(:injury => true)
  end
 
 puts 'Updating Sleepers'
@@ -51,39 +51,39 @@ puts 'Updating Sleepers'
  'Isaac Redman',
  'Daniel Thomas',
  'Coby Fleener'].each do |player|
-    DB[:offense].where(:name => player).update(:sleeper => true)
+    DB[:players].where(:name => player).update(:sleeper => true)
  end
 
 puts 'Updating Bye Weeks'
-DB[:offense].where(:team => 'IND').update(:bye => 4)
-DB[:offense].where(:team => 'PIT').update(:bye => 4)
-DB[:offense].where(:team => 'DAL').update(:bye => 5)
-DB[:offense].where(:team => 'DET').update(:bye => 5)
-DB[:offense].where(:team => 'OAK').update(:bye => 5)
-DB[:offense].where(:team => 'TB' ).update(:bye => 5)
-DB[:offense].where(:team => 'CAR').update(:bye => 6)
-DB[:offense].where(:team => 'CHI').update(:bye => 6)
-DB[:offense].where(:team => 'JAC').update(:bye => 6)
-DB[:offense].where(:team => 'NO' ).update(:bye => 6)
-DB[:offense].where(:team => 'ATL').update(:bye => 7)
-DB[:offense].where(:team => 'DEN').update(:bye => 7)
-DB[:offense].where(:team => 'KC' ).update(:bye => 7)
-DB[:offense].where(:team => 'MIA').update(:bye => 7)
-DB[:offense].where(:team => 'PHI').update(:bye => 7)
-DB[:offense].where(:team => 'SD' ).update(:bye => 7)
-DB[:offense].where(:team => 'BAL').update(:bye => 8)
-DB[:offense].where(:team => 'BUF').update(:bye => 8)
-DB[:offense].where(:team => 'CIN').update(:bye => 8)
-DB[:offense].where(:team => 'HOU').update(:bye => 8)
-DB[:offense].where(:team => 'NE' ).update(:bye => 9)
-DB[:offense].where(:team => 'NYJ').update(:bye => 9)
-DB[:offense].where(:team => 'SF' ).update(:bye => 9)
-DB[:offense].where(:team => 'STL').update(:bye => 9)
-DB[:offense].where(:team => 'ARI').update(:bye => 10)
-DB[:offense].where(:team => 'CLE').update(:bye => 10)
-DB[:offense].where(:team => 'GB' ).update(:bye => 10)
-DB[:offense].where(:team => 'WAS').update(:bye => 10)
-DB[:offense].where(:team => 'MIN').update(:bye => 11)
-DB[:offense].where(:team => 'NYG').update(:bye => 11)
-DB[:offense].where(:team => 'SEA').update(:bye => 11)
-DB[:offense].where(:team => 'TEN').update(:bye => 11)
+DB[:players].where(:team => 'IND').update(:bye => 4)
+DB[:players].where(:team => 'PIT').update(:bye => 4)
+DB[:players].where(:team => 'DAL').update(:bye => 5)
+DB[:players].where(:team => 'DET').update(:bye => 5)
+DB[:players].where(:team => 'OAK').update(:bye => 5)
+DB[:players].where(:team => 'TB' ).update(:bye => 5)
+DB[:players].where(:team => 'CAR').update(:bye => 6)
+DB[:players].where(:team => 'CHI').update(:bye => 6)
+DB[:players].where(:team => 'JAC').update(:bye => 6)
+DB[:players].where(:team => 'NO' ).update(:bye => 6)
+DB[:players].where(:team => 'ATL').update(:bye => 7)
+DB[:players].where(:team => 'DEN').update(:bye => 7)
+DB[:players].where(:team => 'KC' ).update(:bye => 7)
+DB[:players].where(:team => 'MIA').update(:bye => 7)
+DB[:players].where(:team => 'PHI').update(:bye => 7)
+DB[:players].where(:team => 'SD' ).update(:bye => 7)
+DB[:players].where(:team => 'BAL').update(:bye => 8)
+DB[:players].where(:team => 'BUF').update(:bye => 8)
+DB[:players].where(:team => 'CIN').update(:bye => 8)
+DB[:players].where(:team => 'HOU').update(:bye => 8)
+DB[:players].where(:team => 'NE' ).update(:bye => 9)
+DB[:players].where(:team => 'NYJ').update(:bye => 9)
+DB[:players].where(:team => 'SF' ).update(:bye => 9)
+DB[:players].where(:team => 'STL').update(:bye => 9)
+DB[:players].where(:team => 'ARI').update(:bye => 10)
+DB[:players].where(:team => 'CLE').update(:bye => 10)
+DB[:players].where(:team => 'GB' ).update(:bye => 10)
+DB[:players].where(:team => 'WAS').update(:bye => 10)
+DB[:players].where(:team => 'MIN').update(:bye => 11)
+DB[:players].where(:team => 'NYG').update(:bye => 11)
+DB[:players].where(:team => 'SEA').update(:bye => 11)
+DB[:players].where(:team => 'TEN').update(:bye => 11)

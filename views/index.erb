@@ -32,13 +32,13 @@
           <td><%= sprintf("%0.3f", player[:value]) %></td>
           <% unless player[:drafted] %>
             <td>
-              <form class= "draft" action=<%= "#{player[:table]}/draft" %> method="post">
+              <form class= "draft" action=<%= "/draft" %> method="post">
                 <input type="hidden" name="player_id" value=<%= player[:id] %> />
                 <input type="submit" value="draft" />
               </form>
               </td>
               <td>
-              <form class= "take" action=<%= "#{player[:table]}/take" %> method="post">
+              <form class= "take" action=<%= "/take" %> method="post">
                 <input type="hidden" name="player_id" value=<%= player[:id] %> />
                 <input type="submit" value="take" />
               </form>

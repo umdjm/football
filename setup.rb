@@ -2,12 +2,10 @@ require 'sequel'
 
 DB = Sequel.sqlite('football.sqlite')
 
-puts "Creating tables"
-DB.drop_table :offense if DB.table_exists? :offense
-DB.drop_table :defense if DB.table_exists? :defense
-DB.drop_table :kickers if DB.table_exists? :kickers
+puts "Creating players table"
+DB.drop_table :players if DB.table_exists? :players
 
-DB.create_table :offense do
+DB.create_table :players do
   primary_key :id 
   String :name
   String :team
@@ -28,40 +26,13 @@ DB.create_table :offense do
   Decimal :adp
   Decimal :value
   Decimal :bye
-  TrueClass :drafted, :default => false
-  TrueClass :mine, :default => false
-  TrueClass :sleeper, :default => false
-  TrueClass :injury, :default => false
-  TrueClass :favorite, :default => false
-  TrueClass :rookie, :default => false
-end
-
-DB.create_table :defense do
-  primary_key :id 
-  String :team
-  String :name
-  String :position, :default => 'DEF'
   Decimal :points_allowed
   Decimal :sacks
   Decimal :safeties 
-  Decimal :interceptions
-  Decimal :fumbles 
-  Decimal :touchdowns
+  Decimal :defensive_fumble
+  Decimal :defensive_interceptions
+  Decimal :defensive_touchdowns
   Decimal :blocked_fgs
-  Decimal :adp
-  Decimal :value
-  TrueClass :drafted, :default => false
-  TrueClass :mine, :default => false
-  TrueClass :sleeper, :default => false
-  TrueClass :injury, :default => false
-  TrueClass :favorite, :default => false
-end
-
-DB.create_table :kickers do
-  primary_key :id 
-  String :name
-  String :team
-  String :position, :default => 'K'
   Decimal :pats
   Decimal :fg_made
   Decimal :fg_miss
@@ -70,16 +41,13 @@ DB.create_table :kickers do
   Decimal :"30-39"
   Decimal :"40-49"
   Decimal :over_50
-  Decimal :adp
-  Decimal :value
   TrueClass :drafted, :default => false
   TrueClass :mine, :default => false
   TrueClass :sleeper, :default => false
   TrueClass :injury, :default => false
   TrueClass :favorite, :default => false
+  TrueClass :rookie, :default => false
 end
 
-DB.add_index :offense, :id 
-DB.add_index :offense, [:id, :position]
-DB.add_index :defense, :id 
-DB.add_index :kickers, :id 
+DB.add_index :players, :id 
+DB.add_index :players, [:id, :position]
