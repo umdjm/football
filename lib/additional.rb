@@ -52,6 +52,8 @@ task :additional do
    'Demaryius Thomas',
    'Isaac Redman',
    'Daniel Thomas',
+   'Toby Gerhart',
+   'Ben Tate',
    'Coby Fleener'].each do |player|
       DB[:players].where(:name => player).update(:sleeper => true)
    end
