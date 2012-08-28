@@ -36,12 +36,18 @@
           <% unless player[:drafted] %>
             <td>
               <form class= "draft" action=<%= "/draft" %> method="post">
+                <input type="hidden" name="position" value="<%= params[:position] %>"/>
+                <input type="hidden" name="limit" value="<%= params[:limit] %>" />
+                <input type="hidden" name="hide-drafted" value="<%= params[:"hide-drafted"] %>"/>
                 <input type="hidden" name="player_id" value=<%= player[:id] %> />
                 <input type="submit" value="draft" />
               </form>
               </td>
               <td>
               <form class= "take" action=<%= "/take" %> method="post">
+                <input type="hidden" name="position" value="<%= params[:position] %>"/>
+                <input type="hidden" name="limit" value="<%= params[:limit] %>" />
+                <input type="hidden" name="hide-drafted" value="<%= params[:"hide-drafted"] %>"/>
                 <input type="hidden" name="player_id" value=<%= player[:id] %> />
                 <input type="submit" value="take" />
               </form>
@@ -63,7 +69,7 @@
     <form action="/" method="get">
       Position: <input type="text" name="position" value="<%= params[:position] %>"/><br />
       Limit: <input type="text" name="limit" value="<%= params[:limit] %>" /><br />
-      Hide Drafted: <input type="checkbox" name="hide-drafted" /><br />
+      Hide Drafted: <input type="checkbox" name="hide-drafted" value="<%= params[:"hide-drafted"] %>"/><br />
       <input type="submit" value="Search" />
       <a href="/">All</a>
     </form>
