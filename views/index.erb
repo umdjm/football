@@ -21,9 +21,11 @@
       <% @players.each do |player| %>
         <tr id="<%= player[:id] %>" class="<%= " drafted" if player[:drafted] %>">
           <td>
-            <% if player[:injury] %><img height=16px width=16px src="css/injury.png" /><% end %>
-            <% if player[:rookie] %><img height=16px width=16px src="css/fire.png" /><% end %>
-            <% if player[:favorite] %><img height=16px width=16px src="css/star.png" /><% end %>
+            <% if player[:injury] %><img height=16px width=16px src="css/injury.png" title="injured"/><% end %>
+            <% if player[:returner] %><img height=16px width=16px src="css/mail.png" title="returner"/><% end %>
+            <% if player[:rookie] %><img height=16px width=16px src="css/fire.png" title="rookie"/><% end %>
+            <% if player[:sleeper] %><img height=16px width=16px src="css/alarm-clock.png" title="sleeper"/><% end %>
+            <% if player[:favorite] %><img height=16px width=16px src="css/star.png" title="favorite"/><% end %>
             <%= player[:name] %>
           </td>
           <td><%= player[:bye].to_i %></td>

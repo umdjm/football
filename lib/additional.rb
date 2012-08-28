@@ -54,6 +54,14 @@ task :additional do
    'Daniel Thomas',
    'Toby Gerhart',
    'Ben Tate',
+   'Rashad Jennings',
+   'Jon Baldwin',
+   'Jake Locker',
+   'Ryan Williams',
+   'Antonio Brown',
+   'Brandon LaFell',
+   'Josh Freeman',
+   'Jared Cook',
    'Coby Fleener'].each do |player|
       DB[:players].where(:name => player).update(:sleeper => true)
    end
@@ -91,4 +99,28 @@ task :additional do
   DB[:players].where(:team => 'NYG').update(:bye => 11)
   DB[:players].where(:team => 'SEA').update(:bye => 11)
   DB[:players].where(:team => 'TEN').update(:bye => 11)
+
+  puts 'Updating Return Men'
+  ['Darren Sproles',
+   'Antonio Brown',
+   'Randall Cobb',
+   'C.J. Spiller',
+   'Denarius Moore',
+   'Brandon LaFell',
+   'Dez Bryant',
+   'Eric Decker',
+   'Devin Hester',
+   'Titus Young',
+   'Jordy Nelson',
+   'Davone Bess',
+   'Wes Welker',
+   'Ted Ginn Jr',
+   'Joe McKnight',
+   'Jacoby Ford',
+   'Leon Washington',
+   'Percy Harvin',
+   'Patrick Peterson',
+   'Josh Cribbs'].each do |player|
+      DB[:players].where(:name => player).update(:returner => true)
+  end
 end

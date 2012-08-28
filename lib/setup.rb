@@ -49,6 +49,7 @@ task :setup do
     TrueClass :injury, :default => false
     TrueClass :favorite, :default => false
     TrueClass :rookie, :default => false
+    TrueClass :returner, :default => false
   end
 
   DB.add_index :players, :id 

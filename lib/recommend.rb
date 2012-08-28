@@ -17,7 +17,7 @@ module Recommend
           requirements = @@requirements.shuffle
           players = @@players.dup
           @@rounds.times do |round|
-            player = players.dup.keep_if{|p| p[:position] == requirements.first || ('FLEX' == requirements.first && (p[:position] == 'WR' || p[:position] == 'RB' || p[:position] == 'TE'))}.sort_by{|p| p[:value]}.reverse.first
+            player = players.dup.keep_if{|p| p[:position] == requirements.first || 'FLEX' == requirements.first}.sort_by{|p| p[:value]}.reverse.first
             team << player
             players.delete player
             players = players[9..-1]
@@ -57,7 +57,7 @@ module Recommend
           requirements.shuffle!
           @@rounds.times do |round|
             if team[round].nil?
-              player = players.dup.keep_if{|p| p[:position] == requirements.first || ('FLEX' == requirements.first && (p[:position] == 'WR' || p[:position] == 'RB' || p[:position] == 'TE'))}.sort_by{|p| p[:value]}.reverse.first
+              player = players.dup.keep_if{|p| p[:position] == requirements.first || 'FLEX' == requirements.first}.sort_by{|p| p[:value]}.reverse.first
               team[round] = player
               players.delete player
               players = players[9..-1]
