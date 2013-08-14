@@ -35,8 +35,7 @@ task :fantasypro do
                         :receptions => row['rec_att'],
                         :reception_yards => row['rec_yds'],
                         :reception_touchdowns => row['rec_tds'],
-                        :fumbles => row['fumbles'],
-                        :adp => row['adp']
+                        :fumbles => row['fumbles']
   end
 
   puts 'Inserting WRs'
@@ -47,8 +46,7 @@ task :fantasypro do
                         :receptions => row['rec_att'],
                         :reception_yards => row['rec_yds'],
                         :reception_touchdowns => row['rec_tds'],
-                        :fumbles => row['fumbles'],
-                        :adp => row['adp']
+                        :fumbles => row['fumbles']
   end
 
   puts 'Inserting TEs'
@@ -59,13 +57,21 @@ task :fantasypro do
                         :receptions => row['rec_att'],
                         :reception_yards => row['rec_yds'],
                         :reception_touchdowns => row['rec_tds'],
-                        :fumbles => row['fumbles'],
-                        :adp => row['adp']
+                        :fumbles => row['fumbles']
+  end
+
+  puts 'Inserting Ks'
+  CSV.open('data/fantasypros/k.csv', {:headers => true, :header_converters => :downcase}).each do |row|
+    DB[:players].insert :name => row['playername'],
+                        :team => row['team'],
+                        :position => 'K',
+                        :fg_made => row['fg'],
+                        :fg_miss => row['fg'].to_f - row['fga'].to_f
   end
 
   puts "Inserting ADPs"
   CSV.open('data/fantasypros/adp.csv', {:headers => true, :header_converters => :downcase}).each do |row|
-    DB[:players].filter(:name => row['playername']).update(:adp => row['adp'])
+    DB[:players].filter(:name => row['playername']).update(:adp => row['adp'], :bye => row['byewek'])
   end
   DB[:players].filter(:adp => nil).delete
 
