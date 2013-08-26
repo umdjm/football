@@ -23,7 +23,7 @@ class Football < Sinatra::Base
 
   post '/draft' do
     Calculate.draft params[:player_id] 
-    redirect "/?position=#{params[:position]}&limit=#{params[:limit]}"
+    redirect "/?position=#{params[:position]}&limit=#{params[:limit]}&#{params[:"hide-drafted"] ? 'hide-drafted=' : ''}"
   end
 
   post '/take' do

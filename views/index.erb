@@ -38,7 +38,9 @@
               <form class= "draft" action=<%= "/draft" %> method="post">
                 <input type="hidden" name="position" value="<%= params[:position] %>"/>
                 <input type="hidden" name="limit" value="<%= params[:limit] %>" />
-                <input type="hidden" name="hide-drafted" value="<%= params[:"hide-drafted"] %>"/>
+                <% if params[:"hide-drafted"] %>
+                  <input type="hidden" name="hide-drafted" value/>
+                <% end %>
                 <input type="hidden" name="player_id" value=<%= player[:id] %> />
                 <input type="submit" value="draft" />
               </form>
@@ -47,7 +49,9 @@
               <form class= "take" action=<%= "/take" %> method="post">
                 <input type="hidden" name="position" value="<%= params[:position] %>"/>
                 <input type="hidden" name="limit" value="<%= params[:limit] %>" />
-                <input type="hidden" name="hide-drafted" value="<%= params[:"hide-drafted"] %>"/>
+                <% if params[:"hide-drafted"] %>
+                  <input type="hidden" name="hide-drafted" value/>
+                <% end %>
                 <input type="hidden" name="player_id" value=<%= player[:id] %> />
                 <input type="submit" value="take" />
               </form>

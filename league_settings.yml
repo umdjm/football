@@ -1,4 +1,4 @@
-requirements: [QB, WR, WR, RB, RB, TE, RB, K]
+requirements: [QB, WR, WR, RB, RB, TE, FLEX]
 teams: 14
 
 scoring:
