@@ -74,7 +74,7 @@ DB.create_table :players do
   Decimal :reception_touchdowns, default: 0
   Decimal :fumbles, default: 0
   Decimal :conversions, default: 0
-  Decimal :adp
+  Decimal :adp, default: 0
   Decimal :value, default: 0
   Decimal :bye
   Decimal :points_allowed, default: 0

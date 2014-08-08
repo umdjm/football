@@ -16,7 +16,8 @@ class Football < Sinatra::Base
   end
 
   get '/recommend' do
-    players = Calculate.players({'hide-drafted' => true}).sort_by{|p| p[:adp]}
+    players = Calculate.players({'hide-drafted' => true}).select{|p| p[:adp] > 0}.sort_by{|p| p[:adp]}
+    puts players.count
     team = Recommend.generate_team players, Calculate.requirements, 40, 20
     JSON.generate team
   end
