@@ -1,24 +1,37 @@
-requirements: [QB, WR, WR, RB, RB, TE, FLEX]
-teams: 14
+requirements: [QB, WR, WR, WR, RB, RB, TE, FLEX, K, DEF]
+teams: 10
 
 scoring:
-  completions: 0
-  pass_yards: 0.04
-  pass_touchdowns: 6
-  interceptions: -2
-  rush_yards: 0.1
-  rush_touchdowns: 6
-  receptions: 0
-  reception_yards: 0.1
-  reception_touchdowns: 6
-  conversions: 2
-  fumbles: -2
-  fg_made: 3
-  fg_miss: 0
-  pats: 1
-  sacks: 1
-  defensive_interceptions: 2
-  defensive_fumbles: 2
-  defensive_touchdowns: 6
-  safeties: 2
-  blocked_fgs: 2
+  offense:
+    completions: 0
+    pass_yards: 0.04
+    pass_touchdowns: 4
+    interceptions: -1
+    rush_yards: 0.1
+    rush_touchdowns: 6
+    receptions: 0
+    reception_yards: 0.1
+    reception_touchdowns: 6
+    conversions: 2
+    fumbles: -2
+    fg_19: 3 
+    fg_29: 3 
+    fg_39: 3 
+    fg_49: 4 
+    fg_100: 5 
+    pat: 1
+  defense:
+    sacks: 1
+    interceptions: 2
+    fumbles: 2
+    touchdowns: 6
+    safeties: 2
+    blocked_fgs: 2
+    points_allowed:
+      0: 10
+      6: 7
+      13: 4
+      20: 2
+      27: 0
+      34: -2
+      500: -4

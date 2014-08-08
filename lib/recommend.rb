@@ -1,5 +1,3 @@
-CONFIG = YAML.load_file('league_settings.yml')
-
 module Recommend
   module Ai4r::GeneticAlgorithm
     class Chromosome

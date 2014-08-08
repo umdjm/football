@@ -52,10 +52,6 @@ task :setup do
     TrueClass :returner, :default => false
   end
 
-  DB.create_table :picks do
-    Decimal :player_id
-  end
-
   DB.add_index :players, :id 
   DB.add_index :players, [:id, :position]
 end

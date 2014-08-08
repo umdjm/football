@@ -2,5 +2,5 @@ require 'bundler'
 
 Bundler.require
 
-require './football'
+require './server'
 run Football.new

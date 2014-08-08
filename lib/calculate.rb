@@ -31,16 +31,5 @@ module Calculate
       mine.each { |taken| requirements.delete_at(requirements.index(taken) || requirements.index('FLEX')) }
       requirements
     end
-
-    def expected_points player
-      [:completions, :pass_yards, :pass_touchdowns, :interceptions,
-       :rush_yards, :rush_touchdowns,
-       :receptions, :reception_yards, :reception_touchdowns,
-       :conversions, :fumbles,
-       :sacks, :interceptions, :fumbles, :touchdowns, :safeties, :blocked_fgs,
-       :fg_made, :fg_miss, :pats].inject(0) do |acc, attr|
-        acc + (player[attr] ? Calculate::CONFIG['scoring'][attr.to_s] * (player[attr] || 0) : 0)
-      end
-    end
   end
 end
