@@ -6,6 +6,8 @@ require 'yaml'
 
 CONFIG = YAML.load_file('league_settings.yml')
 NFL_PROJECTIONS_URL = 'http://fantasy.nfl.com/research/projections'
+ADP_URL = 'http://www.fantasypros.com/nfl/adp/overall.php'
+BYE_URL = 'http://www.fantasypros.com/nfl/bye-weeks.php'
 OFFENSIVE_CATEGORIES = %w(games pass_yards pass_touchdowns interceptions rush_yards rush_touchdowns reception_yards reception_touchdowns fumbles conversions)
 POSITIONS = {'QB'  => {loops: 2,
                        categories: OFFENSIVE_CATEGORIES},
@@ -19,6 +21,38 @@ POSITIONS = {'QB'  => {loops: 2,
                        categories: %w(games pats 0-19 20-29 30-39 40-49 over_50)},
              'DEF' => {loops: 2,
                        categories: %w(games sacks defensive_interceptions defensive_fumble safeties defensive_touchdowns returns points_allowed)}}
+TEAM_TO_ABBREV = { 'Buffalo Bills' => 'BUF',
+                   'Miami Dolphins' => 'MIA',
+                   'New England Patriots' => 'NE',
+                   'New York Jets' => 'NYJ',
+                   'Baltimore Ravens' => 'BAL',
+                   'Cincinnati Bengals' => 'CIN',
+                   'Cleveland Browns' => 'CLE',
+                   'Pittsburgh Steelers' => 'PIT',
+                   'Houston Texans' => 'HOU',
+                   'Indianapolis Colts' => 'IND',
+                   'Jacksonville Jaguars' => 'JAX',
+                   'Tennessee Titans' => 'TEN',
+                   'Denver Broncos' => 'DEN',
+                   'Kansas City Chiefs' => 'KC',
+                   'Oakland Raiders' => 'OAK',
+                   'San Diego Chargers' => 'SD',
+                   'Dallas Cowboys' => 'DAL',
+                   'New York Giants' => 'NYG',
+                   'Philadelphia Eagles' => 'PHI',
+                   'Washington Redskins' => 'WAS',
+                   'Chicago Bears' => 'CHI',
+                   'Detroit Lions' => 'DET',
+                   'Green Bay Packers' => 'GB',
+                   'Minnesota Vikings' => 'MIN',
+                   'Atlanta Falcons' => 'ATL',
+                   'Carolina Panthers' => 'CAR',
+                   'New Orleans Saints' => 'NO',
+                   'Tampa Bay Buccaneers' => 'TB',
+                   'Arizona Cardinals' => 'ARI',
+                   'St. Louis Rams' => 'STL',
+                   'San Francisco 49ers' => 'SF',
+                   'Seattle Seahawks' => 'SEA'}
 
 DB = Sequel.sqlite('football.sqlite')
 
@@ -40,9 +74,9 @@ DB.create_table :players do
   Decimal :reception_touchdowns, default: 0
   Decimal :fumbles, default: 0
   Decimal :conversions, default: 0
-  Decimal :adp, default: 0
+  Decimal :adp
   Decimal :value, default: 0
-  Decimal :bye, default: 0
+  Decimal :bye
   Decimal :points_allowed, default: 0
   Decimal :sacks, default: 0
   Decimal :safeties, default: 0
@@ -123,11 +157,30 @@ POSITIONS.each do |position, settings|
       settings[:categories].each_with_index do |category, index|
         player[category.to_sym] = tds[index + 2].text.to_i
       end
-      @players_table.insert(player.merge({name: tds.css('a').first.text,
-                                          team: tds.css('em').first.text[-3,3],
+      name = tds.css('a').first.text.strip
+      team = tds.css('em').first.text[-3,3]
+      @players_table.insert(player.merge({name: name,
+                                          team: team ? team.strip : nil,
                                           value: calculate_value(player),
                                           position: position}))
     end
     next_page = true
   end
+end
+
+puts 'getting adp'
+adp = @agent.get(ADP_URL)
+adp.at('table#data').css('tbody tr').each do |player|
+  name = player.css('td')[1].text.gsub(/Defense/, '').gsub(/\(.*/, '').strip
+  adp = player.css('td')[9].text.to_f
+  @players_table.where(name: name).update(adp: adp)
+end
+
+puts 'fixing defensive teams'
+TEAM_TO_ABBREV.each { |team, abbrev| @players_table.where(name: team).update(team: abbrev) }
+
+puts 'inserting bye weeks'
+byes = @agent.get(BYE_URL)
+byes.at('table#data').css('tbody tr').each do |row|
+  @players_table.where(team: TEAM_TO_ABBREV[row.css('td')[0].text.strip]).update(bye: row.css('td')[1].text.to_i)
 end
