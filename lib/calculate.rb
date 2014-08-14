@@ -1,5 +1,10 @@
 module Calculate
-  DB = Sequel.sqlite('football.sqlite')
+	DB = if ENV['DATABASE_URL']
+				 Sequel.connect(ENV['DATABASE_URL'])
+			 else
+				 Sequel.sqlite('football.sqlite')
+			 end
+
   CONFIG = YAML.load_file('league_settings.yml')
 
   class << self

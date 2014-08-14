@@ -54,7 +54,11 @@ TEAM_TO_ABBREV = { 'Buffalo Bills' => 'BUF',
                    'San Francisco 49ers' => 'SF',
                    'Seattle Seahawks' => 'SEA'}
 
-DB = Sequel.sqlite('football.sqlite')
+DB = if ENV['DATABASE_URL']
+			 Sequel.connect(ENV['DATABASE_URL'])
+		 else
+			 Sequel.sqlite('football.sqlite')
+		 end
 
 puts "Creating players table"
 DB.drop_table :players if DB.table_exists? :players
