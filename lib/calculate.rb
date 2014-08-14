@@ -17,7 +17,7 @@ module Calculate
       query = query.filter(:position => opts['position'].upcase) if opts['position'] && !opts['position'].empty?
       query = opts['limit'] && !opts['limit'].empty? ? query.limit(opts['limit']) : query.limit(500)
       query = query.filter(:mine => true) if opts['mine']
-      query = query.filter(:drafted => 0) if opts['hide-drafted'] # TODO why do bools not work
+      query = query.filter(:drafted => false) if opts['hide-drafted']
       query.all
     end
 
